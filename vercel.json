@@ -1,0 +1,27 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        { "key": "X-Content-Type-Options", "value": "nosniff" },
+        { "key": "X-Frame-Options", "value": "DENY" },
+        { "key": "X-XSS-Protection", "value": "1; mode=block" },
+        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" },
+        { "key": "Permissions-Policy", "value": "camera=(), microphone=(), geolocation=()" }
+      ]
+    }
+  ],
+  "redirects": [
+    { "source": "/index", "destination": "/", "permanent": true },
+    { "source": "/guide-medicare.html", "destination": "/guide-medicare", "permanent": true },
+    { "source": "/guide-taxes-fbar.html", "destination": "/guide-taxes-fbar", "permanent": true },
+    { "source": "/guide-portugal.html", "destination": "/guide-portugal", "permanent": true },
+    { "source": "/guide-mexico.html", "destination": "/guide-mexico", "permanent": true },
+    { "source": "/guide-insurance.html", "destination": "/guide-insurance", "permanent": true },
+    { "source": "/guide-banking.html", "destination": "/guide-banking", "permanent": true },
+    { "source": "/privacy.html", "destination": "/privacy", "permanent": true },
+    { "source": "/affiliate.html", "destination": "/affiliate", "permanent": true }
+  ]
+}

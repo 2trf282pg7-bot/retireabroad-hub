@@ -1,0 +1,8 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.DS_Store
+.env
+node_modules/
+social_log.json
+done_social.json

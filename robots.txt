@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /articles/_*
+
+Sitemap: https://retireabroad-hub.com/sitemap.xml
