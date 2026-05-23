@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy – RetireAbroadHub</title>
+<meta name="description" content="Privacy Policy for RetireAbroadHub — covering data collection, cookies, affiliate tracking, and analytics used on this site.">
+<!-- PLACEHOLDER_GA4_MEASUREMENT_ID: Replace with actual GA4 tag once property is created -->
+<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=PLACEHOLDER_GA4_MEASUREMENT_ID"></script> -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --navy: #1B2E5E; --navy-light: #EBF0F8; --navy-mid: #2E4A8A;
+    --gold: #B8962E; --gold-light: #FBF5E0;
+    --cream: #FDFAF5; --ink: #0F0E0C; --ink-mid: #3D3C3A; --ink-light: #7A7876;
+    --border: #E2DDD5; --white: #FFFFFF;
+    color-scheme: light only;
+  }
+  html { background: var(--cream); }
+  body { font-family: 'Inter', system-ui, sans-serif; background: var(--cream); color: var(--ink); font-size: 15px; line-height: 1.65; -webkit-font-smoothing: antialiased; }
+  nav { background: var(--white); border-bottom: 1px solid var(--border); padding: 0 24px; display: flex; align-items: center; justify-content: space-between; height: 62px; position: sticky; top: 0; z-index: 100; }
+  .logo { font-family: 'Merriweather', Georgia, serif; font-weight: 700; font-size: 18px; color: var(--navy); text-decoration: none; }
+  .logo span { color: var(--gold); }
+  .nav-links { display: flex; gap: 22px; list-style: none; }
+  .nav-links a { text-decoration: none; color: var(--ink-mid); font-size: 13px; font-weight: 500; }
+  .nav-links a:hover { color: var(--navy); }
+  .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; background: none; border: none; }
+  .hamburger span { display: block; width: 22px; height: 2px; background: var(--ink); border-radius: 2px; }
+  .mobile-menu { display: none; position: fixed; top: 62px; left: 0; right: 0; bottom: 0; background: var(--white); z-index: 99; padding: 24px; overflow-y: auto; }
+  .mobile-menu.open { display: block; }
+  .mobile-nav-links { list-style: none; border-top: 1px solid var(--border); padding-top: 16px; }
+  .mobile-nav-links li { border-bottom: 1px solid var(--border); }
+  .mobile-nav-links a { display: block; padding: 14px 0; font-size: 15px; font-weight: 500; color: var(--ink); text-decoration: none; }
+  .warning-bar { background: var(--navy); padding: 10px 40px; text-align: center; }
+  .warning-bar p { color: rgba(255,255,255,0.9); font-size: 13px; }
+  .warning-bar strong { color: var(--gold); }
+  .page-header { background: var(--white); border-bottom: 1px solid var(--border); padding: 56px 40px 48px; }
+  .page-header-inner { max-width: 740px; margin: 0 auto; }
+  .page-tag { display: inline-block; background: var(--navy-light); color: var(--navy); font-size: 11px; font-weight: 700; letter-spacing: 0.8px; text-transform: uppercase; padding: 4px 12px; border-radius: 20px; margin-bottom: 18px; border: 1px solid #C8D8EE; }
+  .page-header h1 { font-family: 'Merriweather', Georgia, serif; font-size: 34px; font-weight: 700; line-height: 1.25; color: var(--ink); letter-spacing: -0.4px; margin-bottom: 16px; }
+  .page-header .lead { color: var(--ink-mid); font-size: 16px; line-height: 1.7; }
+  .content-wrap { max-width: 740px; margin: 0 auto; padding: 56px 40px; }
+  .content-box { background: var(--white); border: 1px solid var(--border); border-radius: 16px; padding: 48px 40px; }
+  .content-box h2 { font-family: 'Merriweather', Georgia, serif; font-size: 20px; font-weight: 700; color: var(--ink); margin: 32px 0 12px; }
+  .content-box h2:first-child { margin-top: 0; }
+  .content-box p { color: var(--ink-mid); font-size: 14.5px; line-height: 1.75; margin-bottom: 14px; }
+  .content-box ul { color: var(--ink-mid); font-size: 14.5px; line-height: 1.75; margin: 0 0 14px 20px; }
+  .content-box ul li { margin-bottom: 6px; }
+  .placeholder-note { background: var(--gold-light); border: 1px solid #E8D898; border-radius: 8px; padding: 12px 16px; font-size: 12.5px; color: #7A5A00; margin-bottom: 28px; }
+  footer { background: var(--white); border-top: 1px solid var(--border); padding: 40px; margin-top: 0; }
+  .footer-inner { max-width: 1100px; margin: 0 auto; display: flex; justify-content: space-between; align-items: flex-start; gap: 40px; flex-wrap: wrap; }
+  .footer-brand p { font-size: 12.5px; color: var(--ink-light); max-width: 240px; line-height: 1.6; margin-top: 8px; }
+  .footer-col h5 { font-size: 11px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; color: var(--ink-light); margin-bottom: 12px; }
+  .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 8px; }
+  .footer-col a { font-size: 13px; color: var(--ink-mid); text-decoration: none; }
+  .footer-col a:hover { color: var(--navy); }
+  .footer-bottom { max-width: 1100px; margin: 24px auto 0; padding-top: 20px; border-top: 1px solid var(--border); font-size: 11.5px; color: var(--ink-light); display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+  .disclosure { max-width: 1100px; margin: 16px auto 0; background: var(--cream); border: 1px solid var(--border); border-radius: 6px; padding: 8px 14px; font-size: 11px; color: var(--ink-light); }
+  @media (prefers-color-scheme: dark) { html, body { background: var(--cream) !important; color: var(--ink) !important; } }
+  @media (max-width: 768px) {
+    nav { padding: 0 16px; } .nav-links { display: none; } .hamburger { display: flex; }
+    .warning-bar { padding: 10px 16px; }
+    .page-header { padding: 36px 16px 32px; } .page-header h1 { font-size: 24px; }
+    .content-wrap { padding: 32px 16px; } .content-box { padding: 32px 20px; }
+    footer { padding: 32px 16px; } .footer-inner { flex-direction: column; gap: 28px; } .footer-bottom { flex-direction: column; gap: 6px; }
+  }
+</style>
+</head>
+<body>
+<nav>
+  <a href="/" class="logo">Retire<span>Abroad</span>Hub</a>
+  <ul class="nav-links">
+    <li><a href="guide-medicare.html">Medicare Abroad</a></li>
+    <li><a href="guide-taxes-fbar.html">Taxes &amp; FBAR</a></li>
+    <li><a href="guide-portugal.html">Portugal</a></li>
+    <li><a href="guide-mexico.html">Mexico</a></li>
+    <li><a href="guide-insurance.html">Insurance</a></li>
+    <li><a href="guide-banking.html">Banking</a></li>
+  </ul>
+  <button class="hamburger" id="hamburgerBtn" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <ul class="mobile-nav-links">
+    <li><a href="guide-medicare.html">Medicare Abroad</a></li>
+    <li><a href="guide-taxes-fbar.html">Taxes &amp; FBAR</a></li>
+    <li><a href="guide-portugal.html">Portugal</a></li>
+    <li><a href="guide-mexico.html">Mexico</a></li>
+    <li><a href="guide-insurance.html">Insurance</a></li>
+    <li><a href="guide-banking.html">Banking</a></li>
+  </ul>
+</div>
+<div class="warning-bar">
+  <p><strong>Honest disclaimer:</strong> This site contains affiliate links. We earn commissions on referrals — disclosed clearly on every page.</p>
+</div>
+<div class="page-header">
+  <div class="page-header-inner">
+    <div class="page-tag">Site</div>
+    <h1>Privacy Policy</h1>
+    <p class="lead">How RetireAbroadHub collects, uses, and protects information from visitors. Last updated: May 2026.</p>
+  </div>
+</div>
+<div class="content-wrap">
+  <div class="content-box">
+    <!-- PLACEHOLDER: Phase 2 content — privacy policy -->
+    <div class="placeholder-note">Placeholder privacy policy. Replace with a jurisdiction-appropriate policy reviewed by legal counsel before launch. Key items to cover are listed below.</div>
+
+    <h2>Who We Are</h2>
+    <p>RetireAbroadHub (retireabroad-hub.com) provides informational guides for Americans planning to retire abroad. This Privacy Policy describes how we handle data collected when you visit this site.</p>
+
+    <h2>What Information We Collect</h2>
+    <p>We do not require account registration or collect personally identifiable information directly. However, the following data is collected automatically or via third-party tools:</p>
+    <ul>
+      <li>Browser type, operating system, and device type (via analytics)</li>
+      <li>Pages visited, time on page, and referral source (via analytics)</li>
+      <li>IP address (anonymized where required)</li>
+      <li>Clicks on affiliate links (tracked by affiliate networks)</li>
+    </ul>
+
+    <h2>Analytics</h2>
+    <p>This site uses Google Analytics 4 (measurement ID: PLACEHOLDER_GA4_MEASUREMENT_ID) to understand how visitors use the site. Google Analytics collects usage data including page views, session duration, and approximate geographic location based on IP address. Data is processed in accordance with Google's privacy policy. You can opt out via the Google Analytics Opt-out Browser Add-on.</p>
+    <p>Google Analytics data is used solely to improve site content and is not sold or shared with third parties for advertising purposes.</p>
+
+    <h2>Cookies</h2>
+    <p>This site uses the following types of cookies:</p>
+    <ul>
+      <li><strong>Analytics cookies:</strong> Set by Google Analytics to distinguish users and sessions. These are first-party cookies managed by Google.</li>
+      <li><strong>Affiliate tracking cookies:</strong> Set when you click affiliate links. These are third-party cookies placed by affiliate networks (see Affiliate Disclosure for partner list). They track referrals for commission attribution purposes.</li>
+    </ul>
+    <p>You can control cookie preferences via your browser settings. Note that disabling cookies may affect site functionality.</p>
+
+    <h2>Affiliate Tracking</h2>
+    <p>RetireAbroadHub participates in affiliate programs. When you click a partner link, the affiliate network may set a tracking cookie to attribute any resulting purchase or enrollment to this site. We earn a commission on qualifying referrals at no extra cost to you. A full list of affiliate relationships is available on our <a href="affiliate.html">Affiliate Disclosure</a> page.</p>
+    <p>Affiliate tracking is handled by the respective affiliate networks (including but not limited to those listed in our disclosure). Their data practices are governed by their own privacy policies.</p>
+
+    <h2>Data Retention</h2>
+    <p>Analytics data is retained for 26 months by default in Google Analytics 4. Affiliate tracking cookies typically expire within 30–90 days depending on the affiliate program.</p>
+
+    <h2>Third-Party Links</h2>
+    <p>This site links to external websites including affiliate partners, government agencies, and reference sources. We are not responsible for the privacy practices of external sites. We encourage you to review their privacy policies before providing any personal information.</p>
+
+    <h2>Your Rights</h2>
+    <p>Depending on your jurisdiction, you may have rights to access, correct, or delete data collected about you. To exercise these rights or ask questions about this policy, contact us at the email address listed in the site footer or via the contact page when available.</p>
+
+    <h2>Changes to This Policy</h2>
+    <p>This Privacy Policy may be updated from time to time. The date at the top of this page reflects the most recent revision. Continued use of this site after changes constitutes acceptance of the updated policy.</p>
+
+    <h2>Contact</h2>
+    <p>For privacy-related inquiries, contact RetireAbroadHub via the contact information provided on the main site. Requests will be responded to within 30 days.</p>
+  </div>
+</div>
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a href="/" class="logo">Retire<span>Abroad</span>Hub</a>
+      <p>Honest, sourced guides for Americans seriously planning to retire in Portugal or Mexico. No lifestyle cheerleading.</p>
+    </div>
+    <div class="footer-col">
+      <h5>Guides</h5>
+      <ul>
+        <li><a href="guide-medicare.html">Medicare Abroad</a></li>
+        <li><a href="guide-taxes-fbar.html">Taxes &amp; FBAR</a></li>
+        <li><a href="guide-insurance.html">Health Insurance</a></li>
+        <li><a href="guide-banking.html">Banking &amp; Transfers</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Destinations</h5>
+      <ul>
+        <li><a href="guide-portugal.html">Portugal D7 Visa</a></li>
+        <li><a href="guide-mexico.html">Mexico Residency</a></li>
+        <li><a href="guide-portugal.html">Portugal NHR Taxes</a></li>
+        <li><a href="guide-mexico.html">Mexico IMSS Healthcare</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Site</h5>
+      <ul>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="affiliate.html">Affiliate Disclosure</a></li>
+        <li><a href="sitemap.xml">Sitemap</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="disclosure">&#9888; Affiliate disclosure: RetireAbroadHub earns commissions from partner links. This does not affect our editorial rankings or content. All articles are for informational purposes only — not legal, tax, or financial advice.</div>
+  <div class="footer-bottom">
+    <span>© 2026 RetireAbroadHub. All rights reserved.</span>
+    <span>retireabroad-hub.com</span>
+  </div>
+</footer>
+<script>
+  document.getElementById('hamburgerBtn').addEventListener('click', function() {
+    document.getElementById('mobileMenu').classList.toggle('open');
+  });
+</script>
+</body>
+</html>
