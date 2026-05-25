@@ -323,9 +323,9 @@
   "summary_stats": {
     "total_cases": 25,
     "by_category": {
-      "tax_penalty": 9,
+      "tax_penalty": 8,
       "medical_cost": 6,
-      "visa_rejection": 6,
+      "visa_rejection": 7,
       "banking_issue": 4
     },
     "countries_covered": [
