@@ -1,98 +1,722 @@
-{
-  "category_1_medicare_insurance": [
-    { "keyword": "medicare abroad coverage what happens", "intent": "informational" },
-    { "keyword": "medicare part b penalty abroad how to avoid", "intent": "emotional" },
-    { "keyword": "health insurance gap american retiree portugal", "intent": "emotional" },
-    { "keyword": "emergency room abroad american retiree bill", "intent": "emotional" },
-    { "keyword": "international health insurance pre existing condition retiree", "intent": "commercial" },
-    { "keyword": "cigna global vs img insurance retiree comparison", "intent": "commercial" },
-    { "keyword": "cobra coverage abroad american retiree", "intent": "informational" },
-    { "keyword": "american retiree portugal health insurance denied", "intent": "emotional" },
-    { "keyword": "medicare supplement abroad does it work", "intent": "informational" },
-    { "keyword": "how to avoid medicare penalty retiring abroad", "intent": "transactional" }
-  ],
-  "category_2_tax_fbar": [
-    { "keyword": "FBAR requirement american retiree abroad", "intent": "informational" },
-    { "keyword": "FATCA reporting foreign bank account retiree", "intent": "informational" },
-    { "keyword": "FBAR penalty willful non-filing retiree", "intent": "emotional" },
-    { "keyword": "portugal NHR tax regime american retiree", "intent": "commercial" },
-    { "keyword": "double taxation portugal us tax treaty retiree", "intent": "informational" },
-    { "keyword": "social security taxed abroad american retiree", "intent": "informational" },
-    { "keyword": "foreign earned income exclusion retirement income", "intent": "informational" },
-    { "keyword": "FATCA specialized CPA cost american expat", "intent": "transactional" },
-    { "keyword": "mexico tax resident american retiree consequences", "intent": "emotional" },
-    { "keyword": "how to file FBAR american retiree portugal mexico", "intent": "transactional" }
-  ],
-  "category_3_visa_residency": [
-    { "keyword": "portugal D7 visa rejected american retiree reason", "intent": "emotional" },
-    { "keyword": "D7 visa income requirement american retiree", "intent": "informational" },
-    { "keyword": "portugal NHR vs regular residency american retiree", "intent": "commercial" },
-    { "keyword": "mexico residente temporal visa american retiree denied", "intent": "emotional" },
-    { "keyword": "portugal golden visa american retiree requirements", "intent": "commercial" },
-    { "keyword": "AIMA appointment wait time portugal retiree", "intent": "informational" },
-    { "keyword": "mexico residente permanente american retiree how to get", "intent": "transactional" },
-    { "keyword": "portugal residency renewal documents american retiree", "intent": "transactional" },
-    { "keyword": "mexico immigration fine overstay american retiree", "intent": "emotional" },
-    { "keyword": "portugal citizenship requirements american retiree path", "intent": "informational" }
-  ],
-  "category_4_banking_finance": [
-    { "keyword": "open bank account portugal american retiree problems", "intent": "emotional" },
-    { "keyword": "transfer large sum portugal mexico american retiree", "intent": "transactional" },
-    { "keyword": "foreign bank account reporting requirement american retiree", "intent": "informational" },
-    { "keyword": "charles schwab international account retiree review", "intent": "commercial" },
-    { "keyword": "wise vs bank wire transfer mexico retiree comparison", "intent": "commercial" },
-    { "keyword": "portuguese bank account denied american retiree", "intent": "emotional" },
-    { "keyword": "pension direct deposit portugal mexico american retiree", "intent": "transactional" },
-    { "keyword": "currency exchange risk retiree abroad portugal mexico", "intent": "informational" },
-    { "keyword": "mexico bank account foreigner requirements", "intent": "transactional" },
-    { "keyword": "frozen bank account american retiree abroad what to do", "intent": "emotional" }
-  ],
-  "category_5_real_estate": [
-    { "keyword": "buying property portugal american retiree problems", "intent": "emotional" },
-    { "keyword": "portugal property purchase tax american buyer", "intent": "informational" },
-    { "keyword": "mexico ejido land foreigner trap", "intent": "emotional" },
-    { "keyword": "portugal vs mexico property buying foreigner comparison", "intent": "commercial" },
-    { "keyword": "renting vs buying portugal retiree financial analysis", "intent": "commercial" },
-    { "keyword": "mexico fideicomiso trust american retiree property", "intent": "informational" },
-    { "keyword": "portugal property lawyer american buyer required", "intent": "transactional" },
-    { "keyword": "american retiree portugal real estate agent recommended", "intent": "commercial" },
-    { "keyword": "mexico coastal property restrictions american retiree", "intent": "informational" },
-    { "keyword": "portugal lisbon algarve property budget american retiree", "intent": "commercial" }
-  ],
-  "category_6_social_security": [
-    { "keyword": "social security abroad reduction WEP GPO retiree", "intent": "informational" },
-    { "keyword": "social security direct deposit portugal mexico retiree", "intent": "transactional" },
-    { "keyword": "collect social security from abroad american retiree", "intent": "informational" },
-    { "keyword": "social security WEP penalty foreign pension retiree", "intent": "emotional" },
-    { "keyword": "ss benefits taxable portugal tax treaty retiree", "intent": "informational" },
-    { "keyword": "social security working abroad affect benefits retiree", "intent": "informational" },
-    { "keyword": "totalization agreement portugal mexico social security", "intent": "informational" },
-    { "keyword": "social security suspend restart abroad strategy retiree", "intent": "commercial" },
-    { "keyword": "american retiree ss benefits withheld abroad what to do", "intent": "emotional" },
-    { "keyword": "maximize social security retiring abroad timing strategy", "intent": "commercial" }
-  ],
-  "category_7_healthcare_local": [
-    { "keyword": "portugal SNS healthcare american retiree how to join", "intent": "transactional" },
-    { "keyword": "mexico IMSS voluntary enrollment american retiree cost", "intent": "transactional" },
-    { "keyword": "portugal private vs public healthcare american retiree", "intent": "commercial" },
-    { "keyword": "mexico healthcare quality american retiree honest review", "intent": "commercial" },
-    { "keyword": "pre-existing condition portugal health insurance denied", "intent": "emotional" },
-    { "keyword": "dental costs portugal vs mexico american retiree comparison", "intent": "commercial" },
-    { "keyword": "portugal NHR healthcare coverage american retiree", "intent": "informational" },
-    { "keyword": "mexico emergency medical evacuation insurance retiree", "intent": "commercial" },
-    { "keyword": "portugal hospital english speaking american retiree", "intent": "informational" },
-    { "keyword": "prescription medication supply american retiree portugal mexico", "intent": "informational" }
-  ],
-  "category_8_cost_of_living": [
-    { "keyword": "portugal cost of living american retiree budget realistic", "intent": "informational" },
-    { "keyword": "mexico cost of living retired american honest breakdown", "intent": "informational" },
-    { "keyword": "portugal lisbon rent shock american retiree", "intent": "emotional" },
-    { "keyword": "hidden costs retiring portugal american retiree", "intent": "emotional" },
-    { "keyword": "mexico san miguel allende cost of living american retiree", "intent": "informational" },
-    { "keyword": "portugal algarve american retiree monthly budget", "intent": "informational" },
-    { "keyword": "car ownership portugal american retiree import tax", "intent": "informational" },
-    { "keyword": "mexico utilities cost american retiree house budget", "intent": "informational" },
-    { "keyword": "portugal vs mexico retirement cost comparison american", "intent": "commercial" },
-    { "keyword": "inflation impact american retiree portugal mexico budget", "intent": "informational" }
-  ]
-}
+[
+  {
+    "keyword": "medicare abroad coverage what happens",
+    "category": "category_1_medicare_insurance",
+    "intent": "informational",
+    "source": "manual",
+    "used": true,
+    "added_at": "2025-01-01",
+    "priority": "normal"
+  },
+  {
+    "keyword": "medicare part b penalty abroad how to avoid",
+    "category": "category_1_medicare_insurance",
+    "intent": "emotional",
+    "source": "manual",
+    "used": true,
+    "added_at": "2025-01-01",
+    "priority": "high"
+  },
+  {
+    "keyword": "health insurance gap american retiree portugal",
+    "category": "category_1_medicare_insurance",
+    "intent": "emotional",
+    "source": "manual",
+    "used": false,
+    "added_at": "2025-01-01",
+    "priority": "high"
+  },
+  {
+    "keyword": "emergency room abroad american retiree bill",
+    "category": "category_1_medicare_insurance",
+    "intent": "emotional",
+    "source": "manual",
+    "used": false,
+    "added_at": "2025-01-01",
+    "priority": "high"
+  },
+  {
+    "keyword": "international health insurance pre existing condition retiree",
+    "category": "category_1_medicare_insurance",
+    "intent": "commercial",
+    "source": "manual",
+    "used": false,
+    "added_at": "2025-01-01",
+    "priority": "normal"
+  },
+  {
+    "keyword": "cigna global vs img insurance retiree comparison",
+    "category": "category_1_medicare_insurance",
+    "intent": "commercial",
+    "source": "manual",
+    "used": false,
+    "added_at": "2025-01-01",
+    "priority": "normal"
+  },
+  {
+    "keyword": "cobra coverage abroad american retiree",
+    "category": "category_1_medicare_insurance",
+    "intent": "informational",
+    "source": "manual",
+    "used": false,
+    "added_at": "2025-01-01",
+    "priority": "normal"
+  },
+  {
+    "keyword": "american retiree portugal health insurance denied",
+    "category": "category_1_medicare_insurance",
+    "intent": "emotional",
+    "source": "manual",
+    "used": false,
+    "added_at": "2025-01-01",
+    "priority": "high"
+  },
+  {
+    "keyword": "medicare supplement abroad does it work",
+    "category": "category_1_medicare_insurance",
+    "intent": "informational",
+    "source": "manual",
+    "used": false,
+    "added_at": "2025-01-01",
+    "priority": "normal"
+  },
+  {
+    "keyword": "how to avoid medicare penalty retiring abroad",
+    "category": "category_1_medicare_insurance",
+    "intent": "transactional",
+    "source": "manual",
+    "used": false,
+    "added_at": "2025-01-01",
+    "priority": "normal"
+  },
+  {
+    "keyword": "FBAR requirement american retiree abroad",
+    "category": "category_2_tax_fbar",
+    "intent": "informational",
+    "source": "manual",
+    "used": false,
+    "added_at": "2025-01-01",
+    "priority": "normal"
+  },
+  {
+    "keyword": "FATCA reporting foreign bank account retiree",
+    "category": "category_2_tax_fbar",
+    "intent": "informational",
+    "source": "manual",
+    "used": false,
+    "added_at": "2025-01-01",
+    "priority": "normal"
+  },
+  {
+    "keyword": "FBAR penalty willful non-filing retiree",
+    "category": "category_2_tax_fbar",
+    "intent": "emotional",
+    "source": "manual",
+    "used": false,
+    "added_at": "2025-01-01",
+    "priority": "high"
+  },
+  {
+    "keyword": "portugal NHR tax regime american retiree",
+    "category": "category_2_tax_fbar",
+    "intent": "commercial",
+    "source": "manual",
+    "used": false,
+    "added_at": "2025-01-01",
+    "priority": "normal"
+  },
+  {
+    "keyword": "double taxation portugal us tax treaty retiree",
+    "category": "category_2_tax_fbar",
+    "intent": "informational",
+    "source": "manual",
+    "used": false,
+    "added_at": "2025-01-01",
+    "priority": "normal"
+  },
+  {
+    "keyword": "social security taxed abroad american retiree",
+    "category": "category_2_tax_fbar",
+    "intent": "informational",
+    "source": "manual",
+    "used": false,
+    "added_at": "2025-01-01",
+    "priority": "normal"
+  },
+  {
+    "keyword": "foreign earned income exclusion retirement income",
+    "category": "category_2_tax_fbar",
+    "intent": "informational",
+    "source": "manual",
+    "used": false,
+    "added_at": "2025-01-01",
+    "priority": "normal"
+  },
+  {
+    "keyword": "FATCA specialized CPA cost american expat",
+    "category": "category_2_tax_fbar",
+    "intent": "transactional",
+    "source": "manual",
+    "used": false,
+    "added_at": "2025-01-01",
+    "priority": "normal"
+  },
+  {
+    "keyword": "mexico tax resident american retiree consequences",
+    "category": "category_2_tax_fbar",
+    "intent": "emotional",
+    "source": "manual",
+    "used": false,
+    "added_at": "2025-01-01",
+    "priority": "high"
+  },
+  {
+    "keyword": "how to file FBAR american retiree portugal mexico",
+    "category": "category_2_tax_fbar",
+    "intent": "transactional",
+    "source": "manual",
+    "used": false,
+    "added_at": "2025-01-01",
+    "priority": "normal"
+  },
+  {
+    "keyword": "portugal D7 visa rejected american retiree reason",
+    "category": "category_3_visa_residency",
+    "intent": "emotional",
+    "source": "manual",
+    "used": false,
+    "added_at": "2025-01-01",
+    "priority": "high"
+  },
+  {
+    "keyword": "D7 visa income requirement american retiree",
+    "category": "category_3_visa_residency",
+    "intent": "informational",
+    "source": "manual",
+    "used": false,
+    "added_at": "2025-01-01",
+    "priority": "normal"
+  },
+  {
+    "keyword": "portugal NHR vs regular residency american retiree",
+    "category": "category_3_visa_residency",
+    "intent": "commercial",
+    "source": "manual",
+    "used": false,
+    "added_at": "2025-01-01",
+    "priority": "normal"
+  },
+  {
+    "keyword": "mexico residente temporal visa american retiree denied",
+    "category": "category_3_visa_residency",
+    "intent": "emotional",
+    "source": "manual",
+    "used": false,
+    "added_at": "2025-01-01",
+    "priority": "high"
+  },
+  {
+    "keyword": "portugal golden visa american retiree requirements",
+    "category": "category_3_visa_residency",
+    "intent": "commercial",
+    "source": "manual",
+    "used": false,
+    "added_at": "2025-01-01",
+    "priority": "normal"
+  },
+  {
+    "keyword": "AIMA appointment wait time portugal retiree",
+    "category": "category_3_visa_residency",
+    "intent": "informational",
+    "source": "manual",
+    "used": false,
+    "added_at": "2025-01-01",
+    "priority": "normal"
+  },
+  {
+    "keyword": "mexico residente permanente american retiree how to get",
+    "category": "category_3_visa_residency",
+    "intent": "transactional",
+    "source": "manual",
+    "used": false,
+    "added_at": "2025-01-01",
+    "priority": "normal"
+  },
+  {
+    "keyword": "portugal residency renewal documents american retiree",
+    "category": "category_3_visa_residency",
+    "intent": "transactional",
+    "source": "manual",
+    "used": false,
+    "added_at": "2025-01-01",
+    "priority": "normal"
+  },
+  {
+    "keyword": "mexico immigration fine overstay american retiree",
+    "category": "category_3_visa_residency",
+    "intent": "emotional",
+    "source": "manual",
+    "used": false,
+    "added_at": "2025-01-01",
+    "priority": "high"
+  },
+  {
+    "keyword": "portugal citizenship requirements american retiree path",
+    "category": "category_3_visa_residency",
+    "intent": "informational",
+    "source": "manual",
+    "used": false,
+    "added_at": "2025-01-01",
+    "priority": "normal"
+  },
+  {
+    "keyword": "open bank account portugal american retiree problems",
+    "category": "category_4_banking_finance",
+    "intent": "emotional",
+    "source": "manual",
+    "used": false,
+    "added_at": "2025-01-01",
+    "priority": "high"
+  },
+  {
+    "keyword": "transfer large sum portugal mexico american retiree",
+    "category": "category_4_banking_finance",
+    "intent": "transactional",
+    "source": "manual",
+    "used": false,
+    "added_at": "2025-01-01",
+    "priority": "normal"
+  },
+  {
+    "keyword": "foreign bank account reporting requirement american retiree",
+    "category": "category_4_banking_finance",
+    "intent": "informational",
+    "source": "manual",
+    "used": false,
+    "added_at": "2025-01-01",
+    "priority": "normal"
+  },
+  {
+    "keyword": "charles schwab international account retiree review",
+    "category": "category_4_banking_finance",
+    "intent": "commercial",
+    "source": "manual",
+    "used": false,
+    "added_at": "2025-01-01",
+    "priority": "normal"
+  },
+  {
+    "keyword": "wise vs bank wire transfer mexico retiree comparison",
+    "category": "category_4_banking_finance",
+    "intent": "commercial",
+    "source": "manual",
+    "used": false,
+    "added_at": "2025-01-01",
+    "priority": "normal"
+  },
+  {
+    "keyword": "portuguese bank account denied american retiree",
+    "category": "category_4_banking_finance",
+    "intent": "emotional",
+    "source": "manual",
+    "used": false,
+    "added_at": "2025-01-01",
+    "priority": "high"
+  },
+  {
+    "keyword": "pension direct deposit portugal mexico american retiree",
+    "category": "category_4_banking_finance",
+    "intent": "transactional",
+    "source": "manual",
+    "used": false,
+    "added_at": "2025-01-01",
+    "priority": "normal"
+  },
+  {
+    "keyword": "currency exchange risk retiree abroad portugal mexico",
+    "category": "category_4_banking_finance",
+    "intent": "informational",
+    "source": "manual",
+    "used": false,
+    "added_at": "2025-01-01",
+    "priority": "normal"
+  },
+  {
+    "keyword": "mexico bank account foreigner requirements",
+    "category": "category_4_banking_finance",
+    "intent": "transactional",
+    "source": "manual",
+    "used": false,
+    "added_at": "2025-01-01",
+    "priority": "normal"
+  },
+  {
+    "keyword": "frozen bank account american retiree abroad what to do",
+    "category": "category_4_banking_finance",
+    "intent": "emotional",
+    "source": "manual",
+    "used": false,
+    "added_at": "2025-01-01",
+    "priority": "high"
+  },
+  {
+    "keyword": "buying property portugal american retiree problems",
+    "category": "category_5_real_estate",
+    "intent": "emotional",
+    "source": "manual",
+    "used": false,
+    "added_at": "2025-01-01",
+    "priority": "high"
+  },
+  {
+    "keyword": "portugal property purchase tax american buyer",
+    "category": "category_5_real_estate",
+    "intent": "informational",
+    "source": "manual",
+    "used": false,
+    "added_at": "2025-01-01",
+    "priority": "normal"
+  },
+  {
+    "keyword": "mexico ejido land foreigner trap",
+    "category": "category_5_real_estate",
+    "intent": "emotional",
+    "source": "manual",
+    "used": false,
+    "added_at": "2025-01-01",
+    "priority": "high"
+  },
+  {
+    "keyword": "portugal vs mexico property buying foreigner comparison",
+    "category": "category_5_real_estate",
+    "intent": "commercial",
+    "source": "manual",
+    "used": false,
+    "added_at": "2025-01-01",
+    "priority": "normal"
+  },
+  {
+    "keyword": "renting vs buying portugal retiree financial analysis",
+    "category": "category_5_real_estate",
+    "intent": "commercial",
+    "source": "manual",
+    "used": false,
+    "added_at": "2025-01-01",
+    "priority": "normal"
+  },
+  {
+    "keyword": "mexico fideicomiso trust american retiree property",
+    "category": "category_5_real_estate",
+    "intent": "informational",
+    "source": "manual",
+    "used": false,
+    "added_at": "2025-01-01",
+    "priority": "normal"
+  },
+  {
+    "keyword": "portugal property lawyer american buyer required",
+    "category": "category_5_real_estate",
+    "intent": "transactional",
+    "source": "manual",
+    "used": false,
+    "added_at": "2025-01-01",
+    "priority": "normal"
+  },
+  {
+    "keyword": "american retiree portugal real estate agent recommended",
+    "category": "category_5_real_estate",
+    "intent": "commercial",
+    "source": "manual",
+    "used": false,
+    "added_at": "2025-01-01",
+    "priority": "normal"
+  },
+  {
+    "keyword": "mexico coastal property restrictions american retiree",
+    "category": "category_5_real_estate",
+    "intent": "informational",
+    "source": "manual",
+    "used": false,
+    "added_at": "2025-01-01",
+    "priority": "normal"
+  },
+  {
+    "keyword": "portugal lisbon algarve property budget american retiree",
+    "category": "category_5_real_estate",
+    "intent": "commercial",
+    "source": "manual",
+    "used": false,
+    "added_at": "2025-01-01",
+    "priority": "normal"
+  },
+  {
+    "keyword": "social security abroad reduction WEP GPO retiree",
+    "category": "category_6_social_security",
+    "intent": "informational",
+    "source": "manual",
+    "used": false,
+    "added_at": "2025-01-01",
+    "priority": "normal"
+  },
+  {
+    "keyword": "social security direct deposit portugal mexico retiree",
+    "category": "category_6_social_security",
+    "intent": "transactional",
+    "source": "manual",
+    "used": false,
+    "added_at": "2025-01-01",
+    "priority": "normal"
+  },
+  {
+    "keyword": "collect social security from abroad american retiree",
+    "category": "category_6_social_security",
+    "intent": "informational",
+    "source": "manual",
+    "used": false,
+    "added_at": "2025-01-01",
+    "priority": "normal"
+  },
+  {
+    "keyword": "social security WEP penalty foreign pension retiree",
+    "category": "category_6_social_security",
+    "intent": "emotional",
+    "source": "manual",
+    "used": false,
+    "added_at": "2025-01-01",
+    "priority": "high"
+  },
+  {
+    "keyword": "ss benefits taxable portugal tax treaty retiree",
+    "category": "category_6_social_security",
+    "intent": "informational",
+    "source": "manual",
+    "used": false,
+    "added_at": "2025-01-01",
+    "priority": "normal"
+  },
+  {
+    "keyword": "social security working abroad affect benefits retiree",
+    "category": "category_6_social_security",
+    "intent": "informational",
+    "source": "manual",
+    "used": false,
+    "added_at": "2025-01-01",
+    "priority": "normal"
+  },
+  {
+    "keyword": "totalization agreement portugal mexico social security",
+    "category": "category_6_social_security",
+    "intent": "informational",
+    "source": "manual",
+    "used": false,
+    "added_at": "2025-01-01",
+    "priority": "normal"
+  },
+  {
+    "keyword": "social security suspend restart abroad strategy retiree",
+    "category": "category_6_social_security",
+    "intent": "commercial",
+    "source": "manual",
+    "used": false,
+    "added_at": "2025-01-01",
+    "priority": "normal"
+  },
+  {
+    "keyword": "american retiree ss benefits withheld abroad what to do",
+    "category": "category_6_social_security",
+    "intent": "emotional",
+    "source": "manual",
+    "used": false,
+    "added_at": "2025-01-01",
+    "priority": "high"
+  },
+  {
+    "keyword": "maximize social security retiring abroad timing strategy",
+    "category": "category_6_social_security",
+    "intent": "commercial",
+    "source": "manual",
+    "used": false,
+    "added_at": "2025-01-01",
+    "priority": "normal"
+  },
+  {
+    "keyword": "portugal SNS healthcare american retiree how to join",
+    "category": "category_7_healthcare_local",
+    "intent": "transactional",
+    "source": "manual",
+    "used": false,
+    "added_at": "2025-01-01",
+    "priority": "normal"
+  },
+  {
+    "keyword": "mexico IMSS voluntary enrollment american retiree cost",
+    "category": "category_7_healthcare_local",
+    "intent": "transactional",
+    "source": "manual",
+    "used": false,
+    "added_at": "2025-01-01",
+    "priority": "normal"
+  },
+  {
+    "keyword": "portugal private vs public healthcare american retiree",
+    "category": "category_7_healthcare_local",
+    "intent": "commercial",
+    "source": "manual",
+    "used": false,
+    "added_at": "2025-01-01",
+    "priority": "normal"
+  },
+  {
+    "keyword": "mexico healthcare quality american retiree honest review",
+    "category": "category_7_healthcare_local",
+    "intent": "commercial",
+    "source": "manual",
+    "used": false,
+    "added_at": "2025-01-01",
+    "priority": "normal"
+  },
+  {
+    "keyword": "pre-existing condition portugal health insurance denied",
+    "category": "category_7_healthcare_local",
+    "intent": "emotional",
+    "source": "manual",
+    "used": false,
+    "added_at": "2025-01-01",
+    "priority": "high"
+  },
+  {
+    "keyword": "dental costs portugal vs mexico american retiree comparison",
+    "category": "category_7_healthcare_local",
+    "intent": "commercial",
+    "source": "manual",
+    "used": false,
+    "added_at": "2025-01-01",
+    "priority": "normal"
+  },
+  {
+    "keyword": "portugal NHR healthcare coverage american retiree",
+    "category": "category_7_healthcare_local",
+    "intent": "informational",
+    "source": "manual",
+    "used": false,
+    "added_at": "2025-01-01",
+    "priority": "normal"
+  },
+  {
+    "keyword": "mexico emergency medical evacuation insurance retiree",
+    "category": "category_7_healthcare_local",
+    "intent": "commercial",
+    "source": "manual",
+    "used": false,
+    "added_at": "2025-01-01",
+    "priority": "normal"
+  },
+  {
+    "keyword": "portugal hospital english speaking american retiree",
+    "category": "category_7_healthcare_local",
+    "intent": "informational",
+    "source": "manual",
+    "used": false,
+    "added_at": "2025-01-01",
+    "priority": "normal"
+  },
+  {
+    "keyword": "prescription medication supply american retiree portugal mexico",
+    "category": "category_7_healthcare_local",
+    "intent": "informational",
+    "source": "manual",
+    "used": false,
+    "added_at": "2025-01-01",
+    "priority": "normal"
+  },
+  {
+    "keyword": "portugal cost of living american retiree budget realistic",
+    "category": "category_8_cost_of_living",
+    "intent": "informational",
+    "source": "manual",
+    "used": false,
+    "added_at": "2025-01-01",
+    "priority": "normal"
+  },
+  {
+    "keyword": "mexico cost of living retired american honest breakdown",
+    "category": "category_8_cost_of_living",
+    "intent": "informational",
+    "source": "manual",
+    "used": false,
+    "added_at": "2025-01-01",
+    "priority": "normal"
+  },
+  {
+    "keyword": "portugal lisbon rent shock american retiree",
+    "category": "category_8_cost_of_living",
+    "intent": "emotional",
+    "source": "manual",
+    "used": false,
+    "added_at": "2025-01-01",
+    "priority": "high"
+  },
+  {
+    "keyword": "hidden costs retiring portugal american retiree",
+    "category": "category_8_cost_of_living",
+    "intent": "emotional",
+    "source": "manual",
+    "used": false,
+    "added_at": "2025-01-01",
+    "priority": "high"
+  },
+  {
+    "keyword": "mexico san miguel allende cost of living american retiree",
+    "category": "category_8_cost_of_living",
+    "intent": "informational",
+    "source": "manual",
+    "used": false,
+    "added_at": "2025-01-01",
+    "priority": "normal"
+  },
+  {
+    "keyword": "portugal algarve american retiree monthly budget",
+    "category": "category_8_cost_of_living",
+    "intent": "informational",
+    "source": "manual",
+    "used": false,
+    "added_at": "2025-01-01",
+    "priority": "normal"
+  },
+  {
+    "keyword": "car ownership portugal american retiree import tax",
+    "category": "category_8_cost_of_living",
+    "intent": "informational",
+    "source": "manual",
+    "used": false,
+    "added_at": "2025-01-01",
+    "priority": "normal"
+  },
+  {
+    "keyword": "mexico utilities cost american retiree house budget",
+    "category": "category_8_cost_of_living",
+    "intent": "informational",
+    "source": "manual",
+    "used": false,
+    "added_at": "2025-01-01",
+    "priority": "normal"
+  },
+  {
+    "keyword": "portugal vs mexico retirement cost comparison american",
+    "category": "category_8_cost_of_living",
+    "intent": "commercial",
+    "source": "manual",
+    "used": false,
+    "added_at": "2025-01-01",
+    "priority": "normal"
+  },
+  {
+    "keyword": "inflation impact american retiree portugal mexico budget",
+    "category": "category_8_cost_of_living",
+    "intent": "informational",
+    "source": "manual",
+    "used": false,
+    "added_at": "2025-01-01",
+    "priority": "normal"
+  }
+]

@@ -80,6 +80,11 @@ def load_keywords():
         return json.load(f)
 
 
+def save_keywords(keywords_data):
+    with open("keywords.json", "w") as f:
+        json.dump(keywords_data, f, ensure_ascii=False, indent=2)
+
+
 def load_done_keywords():
     if os.path.exists("done_keywords.json"):
         with open("done_keywords.json", "r") as f:
@@ -94,17 +99,37 @@ def save_done_keywords(done):
 
 
 def get_next_keyword(keywords_data, done_keywords):
-    done_set = set(
-        k if isinstance(k, str) else k.get("keyword", k)
-        for k in done_keywords
-    )
-    for category, keywords in keywords_data.items():
-        for entry in keywords:
-            kw = entry["keyword"] if isinstance(entry, dict) else entry
-            if kw not in done_set:
-                intent = entry.get("intent", "informational") if isinstance(entry, dict) else "informational"
-                return kw, category, intent
-    return None, None, None
+    # Support both flat array (new) and dict-of-arrays (legacy) format
+    if isinstance(keywords_data, list):
+        # New flat array format with used flag
+        # Priority 1: priority=high AND used=false
+        for entry in keywords_data:
+            if not entry.get("used", False) and entry.get("priority") == "high":
+                return entry["keyword"], entry["category"], entry.get("intent", "informational")
+        # Priority 2: intent=emotional AND used=false
+        for entry in keywords_data:
+            if not entry.get("used", False) and entry.get("intent") == "emotional":
+                return entry["keyword"], entry["category"], entry.get("intent", "informational")
+        # Priority 3: any used=false
+        import random
+        unused = [e for e in keywords_data if not e.get("used", False)]
+        if unused:
+            entry = random.choice(unused)
+            return entry["keyword"], entry["category"], entry.get("intent", "informational")
+        return None, None, None
+    else:
+        # Legacy dict-of-arrays format
+        done_set = set(
+            k if isinstance(k, str) else k.get("keyword", k)
+            for k in done_keywords
+        )
+        for category, keywords in keywords_data.items():
+            for entry in keywords:
+                kw = entry["keyword"] if isinstance(entry, dict) else entry
+                if kw not in done_set:
+                    intent = entry.get("intent", "informational") if isinstance(entry, dict) else "informational"
+                    return kw, category, intent
+        return None, None, None
 
 
 def get_category_failures(failure_db, category):
@@ -384,6 +409,13 @@ def main():
     save_article(filename, article_html)
     update_sitemap(filename)
 
+    # Mark keyword as used in keywords.json (flat array) or done_keywords.json (legacy)
+    if isinstance(keywords_data, list):
+        for entry in keywords_data:
+            if entry["keyword"] == keyword:
+                entry["used"] = True
+                break
+        save_keywords(keywords_data)
     done_keywords.append(keyword)
     save_done_keywords(done_keywords)
 
