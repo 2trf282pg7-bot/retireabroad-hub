@@ -10,6 +10,7 @@ client = anthropic.Anthropic(api_key=os.environ["ANTHROPIC_API_KEY"])
 
 SITE_DOMAIN = "retireabroad-hub.com"
 SITE_NAME = "RetireAbroadHub"
+CONVERTKIT_FORM_ID = "9486067"
 
 INTERNAL_LINKS = [
     "/guide-medicare.html",
@@ -237,6 +238,15 @@ may change."
 Use navy (#1B2E5E), cream (#FDFAF5), gold (#B8962E), dark ink (#0F0E0C).
 Use Merriweather or Georgia for headings, system-ui for body text.
 Include internal links listed above.
+
+EMAIL CAPTURE — insert this block once, after the Step-by-step fix section:
+<div style="background:#EBF0F8;border:1px solid #D0DAF0;border-radius:10px;padding:28px;margin:40px 0;text-align:center;">
+  <p style="font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:#1B2E5E;margin-bottom:8px;">FREE RESOURCE</p>
+  <h3 style="font-family:Georgia,serif;font-size:20px;font-weight:700;color:#0F0E0C;margin-bottom:8px;line-height:1.3;">Get the Retirement Abroad Checklist</h3>
+  <p style="font-size:13px;color:#3D3C3A;margin-bottom:16px;line-height:1.6;">5 things to verify before you commit: Medicare strategy, FBAR accounts, visa income threshold, healthcare transition, and banking setup. Free, no spam.</p>
+  <script async data-uid="{CONVERTKIT_FORM_ID}" src="https://f.convertkit.com/{CONVERTKIT_FORM_ID}/index.js"></script>
+</div>
+
 1500-2500 words. Output ONLY valid HTML."""
 
 
