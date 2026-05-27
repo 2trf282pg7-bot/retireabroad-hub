@@ -108,6 +108,19 @@
   .footer-col a:hover { color: var(--navy); }
   .footer-bottom { max-width: 1100px; margin: 24px auto 0; padding-top: 20px; border-top: 1px solid var(--border); font-size: 11.5px; color: var(--ink-light); display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
   .disclosure { max-width: 1100px; margin: 16px auto 0; background: var(--cream); border: 1px solid var(--border); border-radius: 6px; padding: 8px 14px; font-size: 11px; color: var(--ink-light); }
+  .newsletter-wrap { background: var(--navy); border-bottom: 1px solid var(--border); }
+  .newsletter-inner { max-width: 600px; margin: 0 auto; padding: 64px 40px; text-align: center; }
+  .newsletter-inner .section-label { color: var(--gold); }
+  .newsletter-inner .section-title { color: var(--white); margin-bottom: 12px; }
+  .newsletter-inner .section-sub { color: rgba(255,255,255,0.75); margin-bottom: 28px; max-width: 100%; }
+  .newsletter-note { font-size: 11px; color: rgba(255,255,255,0.45); margin-top: 12px; }
+  .exit-popup { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.55); z-index: 2000; align-items: center; justify-content: center; padding: 24px; }
+  .exit-popup-inner { background: var(--cream); border: 1px solid var(--border); border-radius: 16px; padding: 40px; max-width: 480px; width: 100%; position: relative; }
+  .exit-popup-close { position: absolute; top: 12px; right: 16px; background: none; border: none; font-size: 22px; cursor: pointer; color: var(--ink-light); line-height: 1; }
+  .exit-popup-label { font-size: 11px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: var(--gold); margin-bottom: 8px; }
+  .exit-popup h2 { font-family: 'Merriweather', Georgia, serif; font-size: 22px; font-weight: 700; color: var(--ink); margin-bottom: 10px; line-height: 1.3; }
+  .exit-popup p { font-size: 14px; color: var(--ink-mid); margin-bottom: 20px; line-height: 1.6; }
+  .exit-popup-note { font-size: 11px; color: var(--ink-light); margin-top: 12px; margin-bottom: 0; }
   @media (prefers-color-scheme: dark) { html, body { background: var(--cream) !important; color: var(--ink) !important; } }
   @media (max-width: 768px) {
     nav { padding: 0 16px; } .nav-links { display: none; } .hamburger { display: flex; }
@@ -242,6 +255,15 @@
     </div>
   </div>
 </div>
+<div class="newsletter-wrap">
+  <div class="newsletter-inner">
+    <div class="section-label">Free Resource</div>
+    <div class="section-title">Get the Retirement Abroad Checklist</div>
+    <div class="section-sub">5 things to verify before you commit — Medicare strategy, FBAR accounts, visa income threshold, healthcare transition, and banking setup. No fluff.</div>
+    <script async data-uid="9486067" src="https://f.convertkit.com/9486067/index.js"></script>
+    <p class="newsletter-note">No spam. Unsubscribe at any time. We don't share your email.</p>
+  </div>
+</div>
 <div class="aff-section">
   <div class="aff-inner">
     <div class="aff-label">[PR] Recommended Services</div>
@@ -323,10 +345,39 @@
     <span>retireabroad-hub.com</span>
   </div>
 </footer>
+<div class="exit-popup" id="exitPopup" role="dialog" aria-modal="true" aria-label="Free retirement abroad checklist">
+  <div class="exit-popup-inner">
+    <button class="exit-popup-close" id="exitPopupClose" aria-label="Close">×</button>
+    <div class="exit-popup-label">Free Checklist</div>
+    <h2>Before You Commit to Retiring Abroad</h2>
+    <p>Get the 5-point checklist that catches the traps most retirees find out about after they've already moved.</p>
+    <script async data-uid="9486067" src="https://f.convertkit.com/9486067/index.js"></script>
+    <p class="exit-popup-note">No spam. Unsubscribe anytime.</p>
+  </div>
+</div>
 <script>
   document.getElementById('hamburgerBtn').addEventListener('click', function() {
     document.getElementById('mobileMenu').classList.toggle('open');
   });
+  (function() {
+    var popupShown = false;
+    var popup = document.getElementById('exitPopup');
+    document.addEventListener('mouseleave', function(e) {
+      if (!popupShown && e.clientY < 0) {
+        popupShown = true;
+        popup.style.display = 'flex';
+      }
+    });
+    document.getElementById('exitPopupClose').addEventListener('click', function() {
+      popup.style.display = 'none';
+    });
+    popup.addEventListener('click', function(e) {
+      if (e.target === popup) popup.style.display = 'none';
+    });
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') popup.style.display = 'none';
+    });
+  })();
 </script>
 </body>
 </html>
