@@ -2,7 +2,7 @@ name: Auto Generate Article
 
 on:
   schedule:
-    - cron: '0 0 * * 1'
+    - cron: '0 9 * * *'
   workflow_dispatch:
 
 jobs:
@@ -37,3 +37,26 @@ jobs:
           git add articles/ sitemap.xml done_keywords.json
           git diff --staged --quiet || git commit -m "Auto: Add new SEO article $(date +'%Y-%m-%d')"
           git push
+
+      - name: Send failure notification
+        if: failure()
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: smtp.gmail.com
+          server_port: 465
+          secure: true
+          username: ${{ secrets.GMAIL_USERNAME }}
+          password: ${{ secrets.GMAIL_APP_PASSWORD }}
+          subject: "[RetireAbroadHub] Workflow Failed: Auto Generate Article"
+          to: kazunari.itagaki.1996@gmail.com
+          from: ${{ secrets.GMAIL_USERNAME }}
+          body: |
+            ワークフローが失敗しました。
+
+            ワークフロー名: Auto Generate Article
+            日時: ${{ github.event.repository.updated_at }}
+            リポジトリ: ${{ github.repository }}
+            実行ID: ${{ github.run_id }}
+
+            ログを確認してください:
+            https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
