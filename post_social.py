@@ -60,7 +60,7 @@ def get_next_topic():
 def generate_tweet(topic, url):
     full_url = f"https://{SITE_DOMAIN}{url}"
     message = claude.messages.create(
-        model="claude-opus-4-5",
+        model="claude-opus-4-8",
         max_tokens=300,
         system=TWEET_SYSTEM_PROMPT,
         messages=[{"role": "user", "content": f"Write a tweet about: {topic}\nEnd with: {full_url}"}],
