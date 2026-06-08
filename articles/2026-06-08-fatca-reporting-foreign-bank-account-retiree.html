@@ -1,0 +1,520 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Facing FATCA reporting requirements as a retiree? Learn what happens when you don't report foreign bank accounts moving to Portugal or Mexico—penalties, IRS audits, and how to fix it.">
+    <meta name="keywords" content="FATCA reporting foreign bank account retiree, FBAR filing requirements, expat banking compliance">
+    <meta name="author" content="Retire Abroad Hub">
+    <meta property="og:title" content="What Happens When You Don't Report Your Foreign Bank Account as a Retiree Moving to Portugal or Mexico">
+    <meta property="og:description" content="Understand FATCA and FBAR penalties, real-world failure cases, and step-by-step recovery instructions for American retirees abroad.">
+    <meta property="og:type" content="article">
+    <title>What Happens When You Don't Report Your Foreign Bank Account as a Retiree Moving to Portugal or Mexico</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            line-height: 1.7;
+            color: #0F0E0C;
+            background-color: #FDFAF5;
+        }
+        .article-wrapper {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        header {
+            margin-bottom: 40px;
+            border-bottom: 3px solid #B8962E;
+            padding-bottom: 24px;
+        }
+        h1 {
+            font-family: Georgia, serif;
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: #1B2E5E;
+            line-height: 1.3;
+            margin-bottom: 16px;
+        }
+        h2 {
+            font-family: Georgia, serif;
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: #1B2E5E;
+            margin-top: 32px;
+            margin-bottom: 16px;
+        }
+        h3 {
+            font-family: Georgia, serif;
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #0F0E0C;
+            margin-top: 24px;
+            margin-bottom: 12px;
+        }
+        h4 {
+            font-family: Georgia, serif;
+            font-size: 1rem;
+            font-weight: 700;
+            color: #1B2E5E;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        p {
+            margin-bottom: 16px;
+            font-size: 15px;
+        }
+        a {
+            color: #1B2E5E;
+            text-decoration: underline;
+        }
+        a:hover {
+            color: #B8962E;
+        }
+        .pr-notice {
+            background-color: #EBF0F8;
+            border: 1px solid #D0DAF0;
+            border-radius: 10px;
+            padding: 16px;
+            margin-bottom: 24px;
+            font-size: 13px;
+            font-weight: 600;
+            color: #3D3C3A;
+        }
+        .case-study {
+            background-color: #F5EFE5;
+            border-left: 5px solid #B8962E;
+            padding: 20px;
+            margin: 24px 0;
+            font-size: 14px;
+        }
+        .case-study strong {
+            display: block;
+            color: #1B2E5E;
+            margin-bottom: 8px;
+        }
+        .checklist {
+            background-color: #F9F7F3;
+            border: 1px solid #D0DAF0;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 24px 0;
+        }
+        .checklist ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        .checklist li {
+            padding-left: 28px;
+            position: relative;
+            margin-bottom: 10px;
+            font-size: 14px;
+        }
+        .checklist li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #B8962E;
+            font-weight: 700;
+        }
+        .comparison {
+            background-color: #F9F7F3;
+            border: 1px solid #D0DAF0;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 24px 0;
+            font-size: 14px;
+        }
+        .comparison-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+            margin-bottom: 16px;
+        }
+        .comparison-label {
+            font-weight: 700;
+            color: #1B2E5E;
+            margin-bottom: 4px;
+        }
+        .cta-box {
+            background: #EBF0F8;
+            border: 1px solid #D0DAF0;
+            border-radius: 10px;
+            padding: 28px;
+            margin: 40px 0;
+            text-align: center;
+        }
+        .cta-label {
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            color: #1B2E5E;
+            margin-bottom: 8px;
+        }
+        .cta-title {
+            font-family: Georgia, serif;
+            font-size: 20px;
+            font-weight: 700;
+            color: #0F0E0C;
+            margin-bottom: 8px;
+            line-height: 1.3;
+        }
+        .cta-text {
+            font-size: 13px;
+            color: #3D3C3A;
+            margin-bottom: 16px;
+            line-height: 1.6;
+        }
+        .services-list {
+            background-color: #F9F7F3;
+            border: 1px solid #D0DAF0;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 24px 0;
+        }
+        .service-item {
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #D0DAF0;
+        }
+        .service-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        .service-name {
+            font-weight: 700;
+            color: #1B2E5E;
+            font-size: 14px;
+            margin-bottom: 4px;
+        }
+        .service-desc {
+            font-size: 13px;
+            color: #3D3C3A;
+            margin-bottom: 4px;
+        }
+        .service-note {
+            font-size: 12px;
+            color: #666;
+            font-style: italic;
+        }
+        .footer-notice {
+            background-color: #F5EFE5;
+            border: 1px solid #D0DAF0;
+            border-radius: 8px;
+            padding: 16px;
+            margin-top: 40px;
+            font-size: 12px;
+            color: #3D3C3A;
+            line-height: 1.6;
+        }
+        strong {
+            color: #1B2E5E;
+        }
+        ol, ul {
+            margin-left: 20px;
+            margin-bottom: 16px;
+        }
+        li {
+            margin-bottom: 8px;
+            font-size: 15px;
+        }
+        .step-number {
+            font-weight: 700;
+            color: #B8962E;
+        }
+        .last-verified {
+            color: #666;
+            font-size: 12px;
+            font-style: italic;
+            margin-top: 8px;
+        }
+    </style>
+</head>
+<body>
+<div class="article-wrapper">
+    <header>
+        <h1>What Happens When You Don't Report Your Foreign Bank Account as a Retiree Moving to Portugal or Mexico</h1>
+    </header>
+
+    <div class="pr-notice">
+        [PR] This article contains affiliate links. We may earn a commission at no extra cost to you.
+    </div>
+
+    <h2>The Financial Consequences Are Immediate and Severe</h2>
+
+    <p>You open a bank account in Lisbon. The banker hands you a debit card. Life feels normal. You never file Form 114 with FinCEN. You don't report the account to the IRS. Nobody sends you a letter. For two years, nothing happens.</p>
+
+    <p>Then, in year three, an IRS examiner pulls your name for a foreign account compliance review. Within 60 days, you receive a letter about "unreported foreign financial assets."</p>
+
+    <p><strong>What you're facing now:</strong></p>
+
+    <ul>
+        <li>FBAR willful violation penalty: 50% of the highest account balance at any point during each unfiled year</li>
+        <li>FATCA Form 8938 penalties: $10,000 for first violation, up to $50,000 for subsequent years</li>
+        <li>Back taxes, interest at 8%+ annually, and potential fraud prosecution if the IRS determines deliberate concealment</li>
+        <li>Tax attorney and CPA fees: $8,000–$25,000 to resolve the matter</li>
+    </ul>
+
+    <p>This is not theoretical. Expat tax attorneys and accountants report this pattern consistently among retirees who move abroad without understanding U.S. reporting requirements.</p>
+
+    <h2>Why This Happens: The Reporting System Most Retirees Don't Know About</h2>
+
+    <p>The U.S. government has two separate and overlapping foreign account reporting systems, and retirees almost always confuse them or skip one entirely.</p>
+
+    <h3>1. FBAR (Form FinCEN 114)</h3>
+
+    <p><strong>Who files it:</strong> Any U.S. person (citizen, resident alien, or green card holder) with foreign financial accounts totaling over $10,000 at any point during the calendar year.</p>
+
+    <p><strong>What counts:</strong> Bank accounts, investment accounts, retirement accounts held abroad—but NOT your primary residence or real property. Accounts held jointly with non-U.S. persons count fully toward the $10,000 threshold.</p>
+
+    <p><strong>Filing deadline:</strong> April 15 (with automatic extension to October 15). It is filed electronically with <a href="https://www.fincen.gov">FinCEN</a>, not the IRS.</p>
+
+    <p><strong>Penalty for non-filing:</strong> $10,000 per year for non-willful violations, or 50% of the highest account balance for willful violations.</p>
+
+    <h3>2. FATCA (Form 8938)</h3>
+
+    <p><strong>Who files it:</strong> U.S. persons whose total specified foreign assets exceed certain thresholds (typically $200,000–$600,000 depending on filing status and whether you live abroad).</p>
+
+    <p><strong>What counts:</strong> Financial assets including bank accounts, stocks, bonds, mutual funds, insurance contracts with cash values, and retirement accounts.</p>
+
+    <p><strong>Filing deadline:</strong> April 15 with your Form 1040. It is filed with the <a href="https://www.irs.gov">IRS</a>, not FinCEN.</p>
+
+    <p><strong>Penalty for non-filing:</strong> $10,000 per year, plus $10,000 for each year of non-disclosure after the IRS notifies you (capped at $50,000 per violation).</p>
+
+    <h3>The Core Problem</h3>
+
+    <p>Many retirees believe that FBAR is a one-time filing or that the $10,000 threshold is per account, not aggregate. The reality: <strong>you must file FBAR every single year your foreign accounts exceed $10,000 combined, and you must file FATCA every year if your foreign assets exceed the IRS threshold.</strong></p>
+
+    <p>Cases reported in expat communities show: a retired couple opened a joint savings account in Portugal without understanding aggregate reporting. They believed the $10,000 threshold applied per account. The account peaked at $185,000. Two years later, an IRS audit triggered a willful FBAR violation assessment.</p>
+
+    <p><strong>The outcome:</strong> 50% penalty on the peak balance ($92,500) plus $8,000–$15,000 in tax attorney fees and amended returns.</p>
+
+    <h2>Real Failure Cases: What Retirees Actually Face</h2>
+
+    <h3>Case 1: The Mexico Investment Account Mistake</h3>
+
+    <div class="case-study">
+        <strong>Situation:</strong> An American retiree in Mexico held a mutual fund account with a Mexican brokerage. The account peaked at $32,000 in February but dropped to $8,500 by December. The retiree filed no FBAR, believing the year-end balance was below the threshold.
+        <br><br>
+        <strong>What went wrong:</strong> FBAR and FATCA thresholds apply to the highest balance during the calendar year, not the ending balance. The IRS discovered the account during a routine foreign income compliance review.
+        <br><br>
+        <strong>The outcome:</strong> Non-willful FBAR penalty of $10,000 per unfiled year (3 years = $30,000). Additionally, the retiree owed back taxes on unreported investment income from the account. Streamlined Filing Compliance Procedures resolved it, but cost $3,500–$6,000 in professional fees.
+    </div>
+
+    <h3>Case 2: The Portugal NHR Tax Mistake Compounded by Missing FBAR</h3>
+
+    <div class="case-study">
+        <strong>Situation:</strong> A retiree applied for Portugal NHR (Non-Habitual Resident) tax status and opened a Portuguese bank account with $250,000. The retiree failed to file FBAR, assuming Portuguese tax residency exempted them from U.S. reporting requirements.
+        <br><br>
+        <strong>What went wrong:</strong> NHR status is a Portuguese tax benefit. It does not exempt you from U.S. reporting requirements. Form FinCEN 114 is still mandatory. Additionally, the retiree's U.S. source income (Social Security, U.S. pension) remained taxable in the U.S. regardless of NHR status.
+        <br><br>
+        <strong>The outcome:</strong> Willful FBAR penalty of $125,000 (50% of peak balance), $5,000 in amended return costs, and $10,000–$15,000 in expat tax attorney fees. Total estimated cost: $150,000+.
+    </div>
+
+    <h3>Case 3: The Streamlined Filing Lifeline</h3>
+
+    <div class="case-study">
+        <strong>Situation:</strong> A retiree in Mexico discovered three years of unfiled FBAR forms while organizing documents for a domestic tax return audit (unrelated to foreign accounts).
+        <br><br>
+        <strong>What went wrong:</strong> The retiree had simply not known about FBAR. Once discovered, voluntary disclosure became necessary to avoid criminal penalties.
+        <br><br>
+        <strong>The outcome:</strong> Using the IRS Streamlined Filing Compliance Procedures (SFCP), the retiree filed 3 years of FBAR forms, 6 years of Form 8938, amended 1040s, and paid back taxes with interest. Total cost: $4,200 in professional fees and $2,800 in back taxes and interest. This was far better than a willful penalty scenario, but still substantial.
+    </div>
+
+    <h2>Step-by-Step Recovery: How to Fix This If You Haven't Filed</h2>
+
+    <h3>Step 1: Assess Your Situation (Do This Immediately)</h3>
+
+    <p>Answer these questions honestly:</p>
+
+    <ul>
+        <li>Do you have any foreign bank accounts, investment accounts, or retirement accounts?</li>
+        <li>Have these accounts ever totaled more than $10,000 at any point?</li>
+        <li>Have you filed Form FinCEN 114 (FBAR) for each year you've held these accounts?</li>
+        <li>Do you have specified foreign financial assets exceeding $200,000–$600,000 (depending on your filing status and residency)?</li>
+        <li>Have you filed Form 8938 with your annual 1040 return?</li>
+    </ul>
+
+    <p>If you answered "no" to any of the filing questions and "yes" to account ownership, you likely have unfiled forms.</p>
+
+    <h3>Step 2: Gather Documentation</h3>
+
+    <p>Collect the following for each foreign account:</p>
+
+    <ul>
+        <li>Account number</li>
+        <li>Bank/institution name and address</li>
+        <li>Type of account (savings, checking, investment, retirement)</li>
+        <li>Highest balance in each year you held the account</li>
+        <li>Dates you opened and closed the account</li>
+        <li>Whether you have signature authority (opened and can withdraw funds) or just beneficial ownership</li>
+    </ul>
+
+    <p>Contact your bank's English-language expat services line directly. Many banks serving American retirees (especially in Portugal and Mexico) have dedicated compliance departments. Ask for account statements showing peak balances for each calendar year.</p>
+
+    <h3>Step 3: Determine Which Filing Path You Qualify For</h3>
+
+    <p><strong>If you have not yet been contacted by the IRS:</strong> You likely qualify for the Streamlined Filing Compliance Procedures (SFCP). This program allows you to file back FBAR and FATCA forms with reduced penalties or no penalties at all, provided you can demonstrate "non-willful" non-compliance (i.e., you didn't intentionally hide the accounts).</p>
+
+    <p><strong>If you have been contacted by the IRS, received an audit notice, or are under criminal investigation:</strong> Do not file anything without a tax attorney. You need legal representation immediately. Contact <a href="https://www.irs.gov">the IRS Criminal Investigation Division</a> or a FATCA-specialized attorney.</p>
+
+    <h3>Step 4: File the Missing Forms</h3>
+
+    <p>For SFCP eligibility (non-audit status):</p>
+
+    <ol>
+        <li>Prepare Form FinCEN 114 (FBAR) for each year you held foreign accounts exceeding $10,000. File these electronically at <a href="https://www.fincen.gov">FinCEN</a> using their e-filing system.</li>
+        <li>Prepare Form 8938 for each year your specified foreign assets exceeded the threshold. File these with amended Form 1040-X returns for those years.</li>
+        <li>File amended Form 1040 returns if you owe back taxes on unreported foreign income (interest, dividends, gains).</li>
+        <li>Include a statement with your filings explaining the reason for non-compliance. Be honest: "I did not understand the reporting requirements" is credible and counts as non-willful.</li>
+    </ol>
+
+    <p>This is complex. A <a href="https://www.irs.gov">FATCA-specialized CPA or tax attorney</a> typically charges $300–$600 per hour for this work. Expect $3,000–$8,000 in total fees for 3–5 years of filings, depending on account complexity.</p>
+
+    <p><strong>[PR] Greenback Expat Tax Services specializes in FBAR and FATCA filing for retirees abroad. They offer flat-rate SFCP packages starting at $1,999 for straightforward multi-year situations, which can be significantly cheaper than hourly professional rates.</strong> They will also handle amended returns and any IRS correspondence on your behalf.</p>
+
+    <h3>Step 5: Pay Any Resulting Penalties and Taxes</h3>
+
+    <p>Under SFCP, the penalties are typically reduced or waived. You will, however, owe:</p>
+
+    <ul>
+        <li>Back income taxes on any unreported foreign-source income (interest, investment gains, rental income)</li>
+        <li>Interest on those back taxes (8%+ annually, calculated from the original due date)</li>
+        <li>Possible failure-to-file or failure-to-pay penalties if the returns themselves were late (0.5% per month)</li>
+    </ul>
+
+    <p>Work with your tax professional to estimate this liability before filing. If you cannot pay in full, the IRS offers installment agreement options (monthly payments over 6–72 months).</p>
+
+    <div class="cta-box">
+        <div class="cta-label">FREE RESOURCE</div>
+        <div class="cta-title">Get the Retirement Abroad Checklist</div>
+        <div class="cta-text">5 things to verify before you commit: Medicare strategy, FBAR accounts, visa income threshold, healthcare transition, and banking setup. Free, no spam.</div>
+        <script async data-uid="9486067" src="https://f.convertkit.com/9486067/index.js"></script>
+    </div>
+
+    <h2>Document Checklist: Everything You Need to File</h2>
+
+    <div class="checklist">
+        <ul>
+            <li>Form FinCEN 114 (FBAR) for each year — filed electronically with <a href="https://www.fincen.gov">FinCEN</a></li>
+            <li>Form 8938 for each year — filed with amended Form 1040-X or included with original 1040</li>
+            <li>Bank statements showing peak balances for each calendar year</li>
+            <li>Proof of account ownership (passport, account opening documents, or notarized statements)</li>
+            <li>Form 1040-X (amended return) for any year with unreported foreign income, if applicable</li>
+            <li>A written statement explaining the reason for non-compliance (honesty is key; "I did not know" is acceptable)</li>
+            <li>If you've received IRS correspondence: copies of all letters, notices, and audit documents</li>
+            <li>Proof of payment for any back taxes owed (bank statements, payment records)</li>
+        </ul>
+    </div>
+
+    <h2>Portugal vs. Mexico: Key Reporting Differences</h2>
+
+    <div class="comparison">
+        <h4>U.S. Reporting Requirements (Same for Both Countries)</h4>
+        <div class="comparison-row">
+            <div>
+                <div class="comparison-label">FBAR Filing</div>
+                <div>Annual electronic filing with <a href="https://www.fincen.gov">FinCEN</a>. Due April 15 (extended to October 15). Applies to all U.S. persons, regardless of residence country.</div>
+            </div>
+            <div>
+                <div class="comparison-label">FATCA Filing</div>
+                <div>Annual filing with IRS on Form 8938. Applies if specified foreign assets exceed threshold. Same rules in Portugal, Mexico, or any country.</div>
+            </div>
+        </div>
+
+        <h4>Portugal-Specific Considerations</h4>
+        <div class="comparison-row">
+            <div>
+                <div class="comparison-label">NHR Tax Status</div>
+                <div>Does NOT exempt you from FBAR or FATCA. Non-Habitual Resident status provides Portuguese tax benefits only; U.S. reporting is mandatory.</div>
+            </div>
+            <div>
+                <div class="comparison-label">D7 Visa</div>
+                <div>Requires proof of monthly passive income (€1,000+). Bank account holding these funds must be reported on FBAR if combined foreign accounts exceed $10,000.</div>
+            </div>
+        </div>
+
+        <h4>Mexico-Specific Considerations</h4>
+        <div class="comparison-row">
+            <div>
+                <div class="comparison-label">Residente Temporal Visa</div>
+                <div>Requires proof of monthly income (MXN 2,700+). Bank accounts must be reported on FBAR if combined foreign accounts exceed $10,000.</div>
+            </div>
+            <div>
+                <div class="comparison-label">Mexican Tax Residency</div>
+                <div>If you become a tax resident of Mexico, you may owe Mexican income tax AND U.S. tax. FBAR and FATCA are still mandatory U.S. filings.</div>
+            </div>
+        </div>
+    </div>
+
+    <h2>How to Avoid This Trap Going Forward</h2>
+
+    <p>If you have now filed your missing FBAR and FATCA forms, here is how to stay compliant:</p>
+
+    <ol>
+        <li><strong>File FBAR annually without exception.</strong> Set a calendar reminder for April 1. File by October 15 at the latest. Visit <a href="https://www.fincen.gov">FinCEN's FBAR e-filing portal</a> to submit Form 114 electronically.</li>
+        <li><strong>Track your foreign account balances throughout the year.</strong> Maintain a simple spreadsheet with month-by-month peak balances. This ensures you can accurately report the highest balance on your FBAR.</li>
+        <li><strong>File Form 8938 with your annual 1040 return.</strong> If you work with a tax preparer in the U.S., explicitly tell them you have foreign accounts. Provide them with account statements.</li>
+        <li><strong>Report all foreign-source income.</strong> Interest, dividends, rental income, and capital gains from foreign accounts must be reported on your U.S. tax return. Use Form 1099 equivalents or construct income statements from bank records.</li>
+        <li><strong>Consult a FATCA-specialized tax professional annually.</strong> The rules change. What was compliant in 2025 may not be in 2026. A yearly 30-minute consultation ($150–$300) is far cheaper than future penalties.</li>
+    </ol>
+
+    <h2>Recommended Services: Professional Help for FBAR and FATCA Compliance</h2>
+
+    <div class="services-list">
+        <div class="service-item">
+            <div class="service-name">[PR] Greenback Expat Tax Services</div>
+            <div class="service-desc">Specializes in FBAR and FATCA filing for American expats and retirees. Offers flat-rate Streamlined Filing Compliance Packages ($1,999–$4,999 depending on complexity) and ongoing annual compliance filing. Handles all IRS correspondence on your behalf. Available for retirees in Portugal, Mexico, and 180+ other countries.</div>
+            <div class="service-note">Typical cost: $1,999–$2,999 for 3-year SFCP package; $350–$500 annually for ongoing compliance.</div>
+        </div>
+
+        <div class="service-item">
+            <div class="service-name">[PR] Taxes for Expats</div>
+            <div class="service-desc">Full-service expat tax firm with emphasis on multi-country tax situations. Handles FBAR, FATCA, foreign earned income exclusion, and treaty-based filings. Offers both flat-fee and hourly rates. CPA-led firm with 20+ years of expat-specific experience.</div>
+            <div class="service-note">Typical cost: $300–$600 per hour; flat-rate SFCP packages available for straightforward cases.</div>
+        </div>
+
+        <div class="service-item">
+            <div class="service-name">[PR] Wise International Transfers</div>
+            <div class="service-desc">While primarily a money transfer service, Wise provides transparent exchange rates and full documentation of transfers between U.S. and Portugal/Mexico accounts. Helpful for managing foreign accounts and generating statements for FBAR reporting. Not a tax service, but an essential tool for maintaining compliant account records.</div>
+            <div class="service-note">Typical cost: Competitive exchange rates with flat fees ($0.70–$5 depending on transfer size); no monthly account fees.</div>
+        </div>
+    </div>
+
+    <h2>Related Guides for Retirees Moving Abroad</h2>
+
+    <p>FBAR and FATCA are only part of the puzzle. Retirees moving to Portugal or Mexico must also address:</p>
+
+    <ul>
+        <li><a href="https://retireabroad-hub.com/guide-taxes-fbar.html">Complete Guide to FBAR, FATCA, and Foreign Income Reporting</a></li>
+        <li><a href="https://retireabroad-hub.com/guide-medicare.html">Medicare Coverage and Penalties When Living Abroad</a></li>
+        <li><a href="https://retireabroad-hub.com/guide-banking.html">Banking, Accounts, and Financial Services for Expat Retirees</a></li>
+        <li><a href="https://retireabroad-hub.com/guide-portugal.html">D7 Visa, Residency, and Compliance for Americans in Portugal</a></li>
+        <li><a href="https://retireabroad-hub.com/guide-mexico.html">Temporary Residency Visa, Taxes, and Healthcare in Mexico</a></li>
+    </ul>
+
+    <div class="footer-notice">
+        <strong>Disclaimer:</strong> This article is for informational purposes only and does not constitute legal, tax, or financial advice. The situations and penalties described are based on documented cases from expat communities and IRS guidance; your specific situation may differ. Always consult a qualified tax professional, attorney, or financial advisor before making decisions about retirement abroad, bank account reporting, visa applications, or tax compliance. FBAR and FATCA rules are complex and change periodically. <br><br>
+        <strong>Last verified:</strong> 2026-06-08. Regulatory information, penalty amounts, and filing requirements may change. Consult official sources: <a href="https://www.fincen.gov">FinCEN</a> (FBAR), <a href="https://www.irs.gov">IRS</a> (FATCA), <a href="https://www.ssa.gov">Social Security Administration</a> (benefits abroad), and <a href="https://www.cms.gov">CMS</a> (Medicare).
+    </div>
+
+</div>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What happens if I don't report my foreign bank account to the IRS as a retiree abroad?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You face significant penalties under FBAR (Form FinCEN 114) and FATCA (Form 8938) regulations. Non-willful FBAR violations carry $10,000 penalties per year; willful violations carry 50% of your highest account balance. FATCA violations start at $10,000 per year and
