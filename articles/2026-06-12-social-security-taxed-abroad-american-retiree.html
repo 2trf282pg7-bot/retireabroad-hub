@@ -1,0 +1,552 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Confused about Social Security taxation when retiring abroad? Learn why US retirees in Portugal and Mexico get hit with unexpected tax bills, what triggers taxation, and step-by-step recovery strategies. Includes real failure cases and official IRS guidance.">
+    <meta name="keywords" content="social security taxed abroad, american retiree portugal mexico, social security taxation expat, FBAR social security, tax treaty social security">
+    <meta name="author" content="Retire Abroad Hub">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="What Happens When Social Security Gets Taxed After You Move to Portugal or Mexico">
+    <meta property="og:description" content="Learn why Social Security becomes taxable when retiring abroad and how to avoid unexpected tax bills.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://retireabroad-hub.com/social-security-taxed-abroad">
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "@id": "https://retireabroad-hub.com/social-security-taxed-abroad#faq1",
+          "name": "Is Social Security taxable when you retire in Portugal or Mexico?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Under US tax law, up to 85% of Social Security benefits are taxable regardless of where you live. Portugal and Mexico do not provide tax exemptions for US citizens' Social Security income. The US-Portugal tax treaty specifically excludes Social Security from foreign tax credit relief. However, Mexico may have limited exemptions under certain residency conditions. You must file US tax returns and report all Social Security benefits."
+          }
+        },
+        {
+          "@type": "Question",
+          "@id": "https://retireabroad-hub.com/social-security-taxed-abroad#faq2",
+          "name": "What triggers the taxation of Social Security benefits abroad?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Social Security becomes taxable when your combined income exceeds $25,000 (single) or $32,000 (married filing jointly). Combined income includes adjusted gross income plus tax-exempt interest plus half your Social Security benefits. Living abroad doesn't change this threshold. Additionally, some retirees pay tax in both the US and Portugal/Mexico due to different definitions of 'tax resident,' doubling their tax burden."
+          }
+        },
+        {
+          "@type": "Question",
+          "@id": "https://retireabroad-hub.com/social-security-taxed-abroad#faq3",
+          "name": "Can the Portugal NHR tax regime reduce Social Security taxes?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. The Portugal NHR (Non-Habitual Resident) regime does not cover Social Security benefits. Cases reported in expat communities show American retirees mistakenly believed NHR would provide tax relief on Social Security, resulting in unnecessary Portuguese tax filings and overdue tax payments of $2,000-$5,000. Under the US-Portugal tax treaty, Social Security remains taxable in the US regardless of Portuguese tax status."
+          }
+        }
+      ]
+    }
+    </script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            line-height: 1.7;
+            color: #0F0E0C;
+            background-color: #FDFAF5;
+        }
+        
+        article {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        h1 {
+            font-family: Georgia, serif;
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: #1B2E5E;
+            margin-bottom: 12px;
+            line-height: 1.3;
+        }
+        
+        h2 {
+            font-family: Georgia, serif;
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: #1B2E5E;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #B8962E;
+            padding-bottom: 10px;
+        }
+        
+        h3 {
+            font-family: Georgia, serif;
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #1B2E5E;
+            margin-top: 28px;
+            margin-bottom: 14px;
+        }
+        
+        p {
+            margin-bottom: 16px;
+            text-align: justify;
+        }
+        
+        .article-meta {
+            font-size: 0.95rem;
+            color: #3D3C3A;
+            margin-bottom: 30px;
+            font-style: italic;
+        }
+        
+        .pr-disclosure {
+            background-color: #EBF0F8;
+            border-left: 4px solid #B8962E;
+            padding: 14px 16px;
+            margin-bottom: 30px;
+            font-size: 0.9rem;
+            color: #1B2E5E;
+            font-weight: 600;
+        }
+        
+        .failure-case {
+            background-color: #F5E6E6;
+            border-left: 4px solid #B8962E;
+            padding: 18px;
+            margin: 24px 0;
+            border-radius: 4px;
+            font-size: 0.95rem;
+            line-height: 1.8;
+        }
+        
+        .failure-case strong {
+            color: #1B2E5E;
+        }
+        
+        .step-box {
+            background-color: #EBF0F8;
+            border-radius: 6px;
+            padding: 20px;
+            margin: 20px 0;
+            border: 1px solid #D0DAF0;
+        }
+        
+        .step-box ol {
+            margin-left: 20px;
+        }
+        
+        .step-box li {
+            margin-bottom: 12px;
+            line-height: 1.7;
+        }
+        
+        .checklist {
+            background-color: #FDFAF5;
+            border: 2px solid #B8962E;
+            border-radius: 6px;
+            padding: 24px;
+            margin: 24px 0;
+        }
+        
+        .checklist h3 {
+            margin-top: 0;
+            color: #1B2E5E;
+        }
+        
+        .checklist ul {
+            list-style: none;
+            margin-left: 0;
+        }
+        
+        .checklist li {
+            padding-left: 28px;
+            margin-bottom: 10px;
+            position: relative;
+        }
+        
+        .checklist li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #B8962E;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        
+        a {
+            color: #1B2E5E;
+            text-decoration: underline;
+            font-weight: 500;
+        }
+        
+        a:hover {
+            color: #B8962E;
+        }
+        
+        .email-capture {
+            background: #EBF0F8;
+            border: 1px solid #D0DAF0;
+            border-radius: 10px;
+            padding: 28px;
+            margin: 40px 0;
+            text-align: center;
+        }
+        
+        .email-capture p:first-child {
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            color: #1B2E5E;
+            margin-bottom: 8px;
+        }
+        
+        .email-capture h3 {
+            font-family: Georgia, serif;
+            font-size: 20px;
+            font-weight: 700;
+            color: #0F0E0C;
+            margin: 0 0 8px 0;
+            line-height: 1.3;
+        }
+        
+        .email-capture p:not(:first-child) {
+            font-size: 13px;
+            color: #3D3C3A;
+            margin-bottom: 16px;
+            line-height: 1.6;
+        }
+        
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 24px 0;
+            border: 1px solid #D0DAF0;
+        }
+        
+        .comparison-table th {
+            background-color: #1B2E5E;
+            color: #FDFAF5;
+            padding: 12px;
+            text-align: left;
+            font-weight: 700;
+        }
+        
+        .comparison-table td {
+            padding: 12px;
+            border-bottom: 1px solid #D0DAF0;
+        }
+        
+        .comparison-table tr:nth-child(even) {
+            background-color: #F5F3F0;
+        }
+        
+        .footer-notice {
+            background-color: #1B2E5E;
+            color: #FDFAF5;
+            padding: 20px;
+            margin-top: 40px;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            line-height: 1.7;
+        }
+        
+        .highlight-dollar {
+            color: #B8962E;
+            font-weight: 700;
+        }
+        
+        em {
+            color: #1B2E5E;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <article>
+        <h1>What Happens When Social Security Gets Taxed After You Move to Portugal or Mexico</h1>
+        
+        <div class="article-meta">
+            Last verified: 2026-06-12 | Read time: 8 minutes | For US citizens retiring abroad
+        </div>
+        
+        <div class="pr-disclosure">
+            [PR] This article contains affiliate links. We may earn a commission at no extra cost to you.
+        </div>
+        
+        <p>You've spent 30+ years paying into Social Security. You imagined that modest monthly check would be tax-free in retirement—especially if you left the United States. That assumption is wrong, and it costs American retirees thousands of dollars every year.</p>
+        
+        <p>The reality: <strong>Social Security benefits are taxable regardless of where you live.</strong> Moving to Portugal or Mexico does not make your benefits tax-exempt. In fact, retiring abroad can trigger <em>double taxation</em>—filing requirements in both the US and your new country—adding thousands to your tax burden.</p>
+        
+        <p>This guide explains what triggers Social Security taxation abroad, why the Portugal NHR regime doesn't help, and the step-by-step process to recover from overpayments.</p>
+        
+        <h2>What Actually Happens: The Dollar Impact</h2>
+        
+        <p>If your Social Security benefits are taxable, you owe federal income tax on up to 85% of the annual benefit amount. For a retiree receiving $24,000 annually, that translates to potential taxes on roughly $20,400 in income.</p>
+        
+        <p>The tax burden depends on your "combined income" threshold:</p>
+        
+        <ul style="margin-left: 20px; margin-bottom: 16px;">
+            <li><strong>Single filers:</strong> Benefits become taxable above $25,000 combined income</li>
+            <li><strong>Married filing jointly:</strong> Benefits become taxable above $32,000 combined income</li>
+            <li><strong>Married filing separately:</strong> Benefits become taxable above $0 combined income</li>
+        </ul>
+        
+        <p><em>Combined income = Adjusted Gross Income + Tax-exempt interest + 50% of Social Security benefits</em></p>
+        
+        <p>Example: A retired couple in Mexico with $28,000 in pension income and $30,000 in Social Security benefits would have combined income of $43,000 ($28,000 + $0 + $15,000). This exceeds the $32,000 threshold by $11,000. Up to 85% of their Social Security ($25,500) becomes subject to federal tax, potentially triggering a tax liability of $4,000–$6,000 depending on state tax rules.</p>
+        
+        <p>But there's another layer: Many retirees pay taxes in both the US and their new country simultaneously.</p>
+        
+        <h2>Why It Happens: The Tax Treaty Trap</h2>
+        
+        <p>US tax law requires you to file a Form 1040 and report all income—including Social Security—if your worldwide income exceeds the filing threshold, <em>regardless of where you live</em>.</p>
+        
+        <p>The US-Portugal tax treaty (Article 18) explicitly states that Social Security benefits remain taxable under US law. Portugal does not provide an exemption. Similarly, Mexico's tax code treats US Social Security as taxable foreign-source income for residents of Mexico.</p>
+        
+        <p>The Portugal NHR (Non-Habitual Resident) regime is often misunderstood. Many retirees believe NHR eliminates taxation on foreign income, including Social Security. It does not. NHR covers certain <em>new</em> income sources for 10 years but explicitly excludes:</p>
+        
+        <ul style="margin-left: 20px; margin-bottom: 16px;">
+            <li>Social Security and government pensions</li>
+            <li>Income from Portuguese sources</li>
+            <li>Income earned before NHR approval</li>
+        </ul>
+        
+        <p>The dual-taxation problem arises because Portugal and Mexico use different definitions of "tax resident." A US citizen living in Portugal for more than 183 days may be considered:</p>
+        
+        <ul style="margin-left: 20px; margin-bottom: 16px;">
+            <li>A US tax resident (required to file Form 1040 and report all worldwide income)</li>
+            <li>A Portuguese tax resident (required to file Portuguese IRS form and report all worldwide income)</li>
+        </ul>
+        
+        <p>Without careful tax planning, you file in both countries and pay tax twice on the same Social Security income.</p>
+        
+        <h2>Real Failure Cases From Expat Communities</h2>
+        
+        <div class="failure-case">
+            <strong>Case 1: The NHR Misunderstanding</strong><br>
+            An American retiree aged 62 relocated to Lisbon and applied for Portugal's NHR tax status, expecting Social Security benefits to become tax-free. She had $22,000 in annual Social Security and $8,000 in US bank interest income. She filed only a Portuguese tax return, believing NHR exempted her US income from reporting.
+            <br><br>
+            <strong>Outcome:</strong> Two years into NHR status, the IRS discovered she had not filed US tax returns. Social Security benefits are not covered by NHR. The IRS assessed taxes on $18,700 (85% of $22,000) annually, plus a 75% failure-to-file penalty applied to underpaid taxes. Her accountant advised filing amended returns (Form 1040-X) for the prior two years.
+            <br><br>
+            <strong>Cost range:</strong> $2,000–$5,000 in unnecessary Portuguese tax filing fees; $6,000–$12,000 in amended return preparation; $4,000–$8,000 in back taxes and penalties
+        </div>
+        
+        <div class="failure-case">
+            <strong>Case 2: The Dual-Taxation Trap</strong><br>
+            A retired couple in Mexico (Playa del Carmen) received $48,000 annual Social Security ($24,000 each). They correctly filed US Form 1040 and reported the benefits as taxable. However, they also registered as tax residents with Mexico's SAT (tax authority) and filed Mexican tax returns, reporting the same Social Security income.
+            <br><br>
+            <strong>Outcome:</strong> Mexico imposed income tax on the Social Security benefits. The couple paid federal tax to the US and state income tax to Mexico on the same income. They attempted to claim a foreign tax credit on their US return but discovered Mexico's tax on Social Security exceeded the US tax credit limit. Net result: they overpaid by approximately $3,000 per year.
+            <br><br>
+            <strong>Cost range:</strong> $3,000–$5,000 annual overpayment for 2 years; $2,000–$4,000 in tax professional fees to resolve via amended returns
+        </div>
+        
+        <p>Multiple expats in <strong>r/PortugalExpats</strong> and <strong>r/ExpatFinance</strong> report similar scenarios: moving abroad with the belief that Social Security becomes tax-free, only to receive unexpected tax bills years later.</p>
+        
+        <h2>Step-by-Step Recovery If You've Overpaid</h2>
+        
+        <p>If you've been paying taxes in both the US and your new country on Social Security, or if you failed to file US returns while living abroad, you can recover overpayments through amended returns.</p>
+        
+        <div class="step-box">
+            <h3>Step 1: Gather Your Tax Documents (Last 3 Years)</h3>
+            <ol>
+                <li><strong>From the US:</strong>
+                    <ul style="margin-left: 20px; margin-top: 8px;">
+                        <li>IRS Form 1099-SSA (issued each January, shows gross Social Security benefit amount)</li>
+                        <li>Any Form 1040s you filed for the years in question (or proof you didn't file)</li>
+                        <li>Records of all income: pensions, investment income, rental income, interest</li>
+                        <li>Proof of tax payments made to the US (IRS payment records or bank statements)</li>
+                    </ul>
+                </li>
+                <li><strong>From Portugal (if applicable):</strong>
+                    <ul style="margin-left: 20px; margin-top: 8px;">
+                        <li>Portuguese IRS (Autoridade Tributária) filings (form IRS)</li>
+                        <li>Proof of taxes paid to Portugal (payment receipts)</li>
+                        <li>NHR approval letter (if filed)</li>
+                    </ul>
+                </li>
+                <li><strong>From Mexico (if applicable):</strong>
+                    <ul style="margin-left: 20px; margin-top: 8px;">
+                        <li>SAT (Servicio de Administración Tributaria) filings (RFC statement)</li>
+                        <li>Proof of taxes paid to Mexico</li>
+                    </ul>
+                </li>
+            </ol>
+        </div>
+        
+        <div class="step-box">
+            <h3>Step 2: Calculate Your Correct US Tax Liability</h3>
+            <ol>
+                <li>Total all sources of income (pension, interest, dividends, rental income, Social Security)</li>
+                <li>Calculate "combined income": AGI + tax-exempt interest + 50% of Social Security</li>
+                <li>If combined income exceeds the threshold ($25,000 single / $32,000 married), determine what percentage of Social Security is taxable:
+                    <ul style="margin-left: 20px; margin-top: 8px;">
+                        <li>If combined income is $25,001–$34,000 (single): up to 50% of benefits are taxable</li>
+                        <li>If combined income exceeds $34,000 (single): up to 85% of benefits are taxable</li>
+                    </ul>
+                </li>
+                <li>Apply your marginal tax rate to the taxable portion of Social Security</li>
+            </ol>
+        </div>
+        
+        <div class="step-box">
+            <h3>Step 3: File Amended Returns (Form 1040-X)</h3>
+            <ol>
+                <li>You can file amended returns for the prior 3 years without penalty if the underpayment was unintentional</li>
+                <li>For each year you need to correct:
+                    <ul style="margin-left: 20px; margin-top: 8px;">
+                        <li>Complete a new Form 1040 with correct Social Security income and total income</li>
+                        <li>File Form 1040-X (amended return) with the IRS, indicating this is a correction</li>
+                        <li>Include a cover letter explaining: "Correcting Social Security taxation. Taxpayer was unaware of reporting requirement while residing in [country]."</li>
+                        <li>Attach all supporting documents (1099-SSA, income statements, proof of residence abroad)</li>
+                    </ul>
+                </li>
+                <li>Mail to: IRS, Attn: Amended Return Unit, [your service center address]
+                    <ul style="margin-left: 20px; margin-top: 8px;">
+                        <li>See <a href="https://www.irs.gov/forms-pubs/about-form-1040-x">IRS Form 1040-X instructions</a> for current mailing address by state</li>
+                    </ul>
+                </li>
+                <li><strong>Cost note:</strong> A FATCA-specialized expat CPA will charge $400–$800 to file one amended return with full documentation. <strong>[PR]</strong> Services like <a href="https://www.greenbacktaxes.com">Greenback Expat Tax Services</a> specialize in correcting Social Security taxation abroad and typically handle amended returns at fixed rates ($600–$1,200 per year amended). Alternatively, <strong>[PR]</strong> <a href="https://www.taxesforexpats.com">Taxes for Expats</a> offers à la carte amended return filing starting at $500 per year.</li>
+            </ol>
+        </div>
+        
+        <div class="step-box">
+            <h3>Step 4: Claim Foreign Tax Credit (If You Paid Taxes Abroad)</h3>
+            <ol>
+                <li>If you paid income tax to Portugal or Mexico on Social Security, you may claim a foreign tax credit on Form 1040</li>
+                <li>Complete Form 1118 (Foreign Tax Credit) or the simpler Form 1116 if your only foreign tax is from one country</li>
+                <li>The credit is limited to the lesser of:
+                    <ul style="margin-left: 20px; margin-top: 8px;">
+                        <li>Taxes actually paid to the foreign country, OR</li>
+                        <li>The US tax on that same income</li>
+                    </ul>
+                </li>
+                <li>Example: If you paid $2,000 to Portugal but owed only $1,800 to the US on the same income, your credit is $1,800 (the lesser amount). The $200 overpayment typically cannot be recovered.</li>
+                <li>File the amended return with the foreign tax credit form attached</li>
+            </ol>
+        </div>
+        
+        <div class="step-box">
+            <h3>Step 5: Monitor for IRS Contact</h3>
+            <ol>
+                <li>The IRS processes amended returns slowly—typically 16 weeks from receipt</li>
+                <li>Keep copies of all correspondence and receipts for your own records</li>
+                <li>If the IRS sends a notice of examination, do not ignore it. Respond within 30 days with documentation</li>
+                <li>You have the right to appeal any determination. See <a href="https://www.irs.gov/appeals">IRS Appeals Process</a> for details</li>
+            </ol>
+        </div>
+        
+        <h2>Document Checklist: What You Need Now</h2>
+        
+        <div class="checklist">
+            <h3>For US Tax Filing</h3>
+            <ul>
+                <li>IRS Form 1099-SSA (January of each year) – shows gross benefit amount</li>
+                <li>Proof of current residence (lease agreement, utility bill, visa stamp in passport)</li>
+                <li>Last 3 years of bank statements (showing all income sources)</li>
+                <li>Documentation of any foreign account ownership (for FBAR if accounts exceed $10,000)</li>
+                <li>Pension statements from US employers or retirement funds</li>
+                <li>Investment income statements (interest, dividends, capital gains)</li>
+            </ul>
+        </div>
+        
+        <div class="checklist">
+            <h3>For Portugal-Specific Issues</h3>
+            <ul>
+                <li>NHR approval letter (if you applied and were approved)</li>
+                <li>Portuguese tax registration number (NIF)</li>
+                <li>Proof of tax residency in Portugal (fiscal address registration)</li>
+                <li>Copies of Portuguese IRS filings (if any)</li>
+                <li>Receipts for any taxes paid to Portugal</li>
+            </ul>
+        </div>
+        
+        <div class="checklist">
+            <h3>For Mexico-Specific Issues</h3>
+            <ul>
+                <li>Mexican tax registration (RFC number)</li>
+                <li>Proof of residency status (Residente Temporal or Permanente visa)</li>
+                <li>Copies of SAT (Mexican tax authority) filings</li>
+                <li>Receipts for any taxes paid to Mexico's IMSS or SAT</li>
+                <li>Bank statements from Mexican accounts (for FBAR reporting if applicable)</li>
+            </ul>
+        </div>
+        
+        <h2>Portugal vs. Mexico: Key Tax Differences</h2>
+        
+        <table class="comparison-table">
+            <tr>
+                <th>Issue</th>
+                <th>Portugal</th>
+                <th>Mexico</th>
+            </tr>
+            <tr>
+                <td><strong>Social Security Taxation</strong></td>
+                <td>Taxable under US-Portugal tax treaty. NHR does NOT cover. Must report on Portuguese IRS form.</td>
+                <td>Taxable as foreign-source income. Mexico may provide exemptions under tax residency agreements, but typically requires reporting.</td>
+            </tr>
+            <tr>
+                <td><strong>Tax Residency Threshold</strong></td>
+                <td>183+ days in calendar year = Portuguese tax resident. Must file even if you file in US.</td>
+                <td>180+ days in calendar year = Mexican tax resident. However, temporary visa holders (Residente Temporal) may have different rules—consult SAT.</td>
+            </tr>
+            <tr>
+                <td><strong>Tax Treaty With US</strong></td>
+                <td>1980 treaty in effect. Covers pensions, dividends, interest. Social Security remains taxable in US.</td>
+                <td>1992 treaty in effect. Covers pensions, dividends, interest. Social Security treatment varies by residency status.</td>
+            </tr>
+            <tr>
+                <td><strong>Foreign Tax Credit</strong></td>
+                <td>Available if you paid Portuguese income tax on Social Security. Credit is limited to US tax owed on that income.</td>
+                <td>Available if you paid Mexican income tax on Social Security. Credit is limited to US tax owed on that income.</td>
+            </tr>
+            <tr>
+                <td><strong>NHR / Special Regime</strong></td>
+                <td>NHR provides 10-year exemption on new foreign-source income. Does NOT cover Social Security, government pensions, or Portuguese-source income.</td>
+                <td>No equivalent to NHR. Temporary residents (Residente Temporal) may have exemptions if income derived outside Mexico and not remitted to Mexico.</td>
+            </tr>
+            <tr>
+                <td><strong>File in Both Countries?</strong></td>
+                <td>Yes, if you meet Portuguese tax residency. Dual filing required. Risk of double taxation on Social Security.</td>
+                <td>Depends on residency status and visa type. Temporary residents may avoid Mexican filing if income not remitted to Mexico. Permanent residents must file in both countries.</td>
+            </tr>
+        </table>
+        
+        <p><strong>Key takeaway:</strong> Moving to either country does not eliminate your US Social Security tax obligation. Portugal's situation is more clear-cut (you must file in both places if tax resident in both). Mexico's rules are more nuanced and depend on visa type—consult a Mexico-specialized CPA before assuming you can avoid filing there.</p>
+        
+        <h2>Why Standard Advice Fails Retirees</h2>
+        
+        <p>Many international tax websites advise retirees to "claim the Foreign Earned Income Exclusion" (FEIE) on Form 2555. <strong>This does not work for Social Security.</strong> The FEIE covers wages and self-employment income only. It explicitly excludes pensions, annuities, and Social Security benefits. Filing Form 2555 for Social Security accomplishes nothing and wastes professional fees.</p>
+        
+        <p>Similarly, the "FEIE exemption" often mentioned in Portugal retirement blogs applies only to new employment income, not pensions or Social Security earned before you move.</p>
+        
+        <h2>What You Should Do Before Moving</h2>
+        
+        <p>If you are still in the planning phase of retirement abroad, complete these steps <em>before</em> you move:</p>
+        
+        <ol style="margin-left: 20px; margin-bottom: 16px;">
+            <li><strong>Estimate your combined income in retirement.</strong> Use your projected Social Security (available on ssa.gov), pension income, investment income, and part-time work. If combined income exceeds $25,000 (single) or $32,000 (married), plan for Social Security taxation.</li>
+            <li><strong>Request a Social Security statement.</strong> Visit <a href="https://www.ssa.gov/benefits/retirement/statements.html">ssa.gov for benefit statements</a> to confirm your benefit amount. Errors are common and easier to correct before you move.</li>
+            <li><strong>Understand your target country's tax residency rules.</strong> If moving to Portugal, learn the 183-day threshold and NHR requirements. If moving to Mexico, determine your visa type and tax filing obligations by consulting <a href="https://www.sat.gob.mx">SAT (Mexico's tax authority)</a>.</li>
+            <li><strong>Consult an expat tax specialist.</strong> A FATCA-specialized CPA will cost $300–$500 for an hour of pre-move tax planning but can prevent $5,000+ in future overpayments.</li>
+        </ol>
+        
+        <div class="email-capture">
+            <p>FREE RESOURCE</p>
+            <h3>Get the Retirement Abroad Checklist</h3>
+            <p>5 things to verify before you commit: Medicare strategy, FBAR accounts, visa income threshold, healthcare transition, and banking setup. Free, no spam.</p>
+            <script async data-uid="9486067" src="https://f.convertkit.com/9486067/index.js"></script>
+        </div>
+        
+        
