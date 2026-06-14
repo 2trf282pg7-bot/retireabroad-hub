@@ -1,13 +1,75 @@
 {
-  "affiliates": [
-    {
-      "partner": "Wise (formerly TransferWise)",
-      "network": "Partnerize",
-      "category": "Banking & Transfers",
-      "url": "https://wise.prf.hn/click/camref:1101l5KK3J",
-      "status": "active",
-      "approved_date": "2026-06-05",
-      "placeholder_token": "PLACEHOLDER_AFFILIATE_URL_WISE"
-    }
-  ]
+  "wise": {
+    "name": "Wise",
+    "url": "https://wise.prf.hn/click/camref:1101l5KK3J",
+    "fallback_url": "https://wise.com/",
+    "status": "active",
+    "network": "partnerize",
+    "approved_date": "2026-06-05",
+    "categories": ["banking", "money_transfer"]
+  },
+  "cigna": {
+    "name": "Cigna Global",
+    "url": "PLACEHOLDER_AFFILIATE_URL_CIGNA",
+    "fallback_url": "https://www.cigna.com/",
+    "status": "pending",
+    "network": "direct_or_sharesale",
+    "categories": ["health_insurance"]
+  },
+  "img_global": {
+    "name": "IMG Global",
+    "url": "PLACEHOLDER_AFFILIATE_URL_IMG",
+    "fallback_url": "https://www.imglobal.com/",
+    "status": "pending",
+    "network": "awin",
+    "categories": ["health_insurance"]
+  },
+  "brighttax": {
+    "name": "Bright!Tax",
+    "url": "PLACEHOLDER_AFFILIATE_URL_BRIGHTTAX",
+    "fallback_url": "https://brighttax.com/",
+    "status": "pending",
+    "network": "direct",
+    "categories": ["tax"]
+  },
+  "greenback": {
+    "name": "Greenback Tax",
+    "url": "PLACEHOLDER_AFFILIATE_URL_GREENBACK",
+    "fallback_url": "https://www.greenbacktaxservices.com/",
+    "status": "pending",
+    "network": "direct",
+    "categories": ["tax"]
+  },
+  "traveling_mailbox": {
+    "name": "Traveling Mailbox",
+    "url": "PLACEHOLDER_AFFILIATE_URL_TRAVELINGMAILBOX",
+    "fallback_url": "https://travelingmailbox.com/",
+    "status": "pending",
+    "network": "direct",
+    "categories": ["mailbox"]
+  },
+  "charles_schwab": {
+    "name": "Charles Schwab",
+    "url": "PLACEHOLDER_AFFILIATE_URL_SCHWAB",
+    "fallback_url": "https://www.schwab.com/",
+    "status": "pending",
+    "network": "direct",
+    "categories": ["banking"]
+  },
+  "international_living": {
+    "name": "International Living",
+    "url": "PLACEHOLDER_AFFILIATE_URL_IL",
+    "fallback_url": "https://internationalliving.com/",
+    "status": "pending",
+    "network": "cj_affiliate",
+    "categories": ["lifestyle"]
+  },
+  "safetywing": {
+    "name": "SafetyWing",
+    "url": "PLACEHOLDER_AFFILIATE_URL_SAFETYWING",
+    "fallback_url": "https://safetywing.com/",
+    "status": "pending",
+    "network": "direct",
+    "categories": ["health_insurance"]
+  }
 }
