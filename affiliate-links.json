@@ -1,0 +1,13 @@
+{
+  "affiliates": [
+    {
+      "partner": "Wise (formerly TransferWise)",
+      "network": "Partnerize",
+      "category": "Banking & Transfers",
+      "url": "https://wise.prf.hn/click/camref:1101l5KK3G",
+      "status": "active",
+      "approved_date": "2026-06-05",
+      "placeholder_token": "PLACEHOLDER_AFFILIATE_URL_WISE"
+    }
+  ]
+}
