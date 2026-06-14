@@ -22,9 +22,23 @@ def get_article_files():
     return articles
 
 
+def get_portugal_files():
+    pages = glob.glob("portugal/**/index.html", recursive=True)
+    pages.sort()
+    return pages
+
+
 def filename_to_url(filepath):
     filename = os.path.basename(filepath)
-    return f"https://{SITE_DOMAIN}/articles/{filename}"
+    slug = filename[:-5] if filename.endswith(".html") else filename
+    return f"https://{SITE_DOMAIN}/articles/{slug}"
+
+
+def portugal_path_to_url(filepath):
+    # portugal/banking/us-bank-account-closed-expat/index.html
+    #   -> https://SITE_DOMAIN/portugal/banking/us-bank-account-closed-expat
+    rel_dir = os.path.dirname(filepath).replace(os.sep, "/")
+    return f"https://{SITE_DOMAIN}/{rel_dir}"
 
 
 def get_file_date(filepath):
@@ -37,6 +51,7 @@ def get_file_date(filepath):
 
 def generate_sitemap():
     articles = get_article_files()
+    portugal_pages = get_portugal_files()
 
     lines = ['<?xml version="1.0" encoding="UTF-8"?>']
     lines.append('<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">')
@@ -58,14 +73,27 @@ def generate_sitemap():
         lines.append("    <priority>0.8</priority>")
         lines.append("  </url>")
 
+    for filepath in portugal_pages:
+        url = portugal_path_to_url(filepath)
+        date = get_file_date(filepath)
+        lines.append("  <url>")
+        lines.append(f"    <loc>{url}</loc>")
+        lines.append(f"    <lastmod>{date}</lastmod>")
+        lines.append("    <changefreq>monthly</changefreq>")
+        lines.append("    <priority>0.8</priority>")
+        lines.append("  </url>")
+
     lines.append("</urlset>")
 
     content = "\n".join(lines)
     with open("sitemap.xml", "w", encoding="utf-8") as f:
         f.write(content)
 
-    total = len(STATIC_URLS) + len(articles)
-    print(f"✅ sitemap.xml updated: {len(STATIC_URLS)} static + {len(articles)} articles = {total} total URLs")
+    total = len(STATIC_URLS) + len(articles) + len(portugal_pages)
+    print(
+        f"✅ sitemap.xml updated: {len(STATIC_URLS)} static + {len(articles)} articles "
+        f"+ {len(portugal_pages)} portugal = {total} total URLs"
+    )
     return len(articles)
 
 
