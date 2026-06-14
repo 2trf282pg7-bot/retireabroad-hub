@@ -337,7 +337,8 @@ def save_article(filename, content):
 
 def update_sitemap(new_filename):
     sitemap_path = "sitemap.xml"
-    url = f"https://{SITE_DOMAIN}/articles/{new_filename}"
+    slug = new_filename[:-5] if new_filename.endswith(".html") else new_filename
+    url = f"https://{SITE_DOMAIN}/articles/{slug}"
     today = datetime.now().strftime("%Y-%m-%d")
     new_entry = (
         f"  <url>\n    <loc>{url}</loc>\n"
