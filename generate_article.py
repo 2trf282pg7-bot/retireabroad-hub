@@ -21,40 +21,18 @@ INTERNAL_LINKS = [
     "/guide-banking.html",
 ]
 
+# Maps keyword categories (from keywords.json) to affiliate keys in
+# affiliate-links.json. URLs are resolved at runtime: active partners use
+# their tracking URL, pending partners fall back to fallback_url.
 AFFILIATE_BY_CATEGORY = {
-    "category_1_medicare_insurance": [
-        "Cigna Global Health Insurance",
-        "IMG International Insurance",
-        "SafetyWing Nomad Insurance",
-    ],
-    "category_2_tax_fbar": [
-        "Greenback Expat Tax Services",
-        "Taxes for Expats",
-    ],
-    "category_3_visa_residency": [
-        "VisaHQ International Services",
-        "Portugal Residency Advisors",
-    ],
-    "category_4_banking_finance": [
-        "Wise International Transfers",
-        "Charles Schwab International Account",
-    ],
-    "category_5_real_estate": [
-        "Portugal Property Guides",
-        "Mexhomes International",
-    ],
-    "category_6_social_security": [
-        "Maximize My Social Security",
-        "Social Security Timing Advisors",
-    ],
-    "category_7_healthcare_local": [
-        "IMSS Voluntary Enrollment Service",
-        "SNS Portugal Registration Assistance",
-    ],
-    "category_8_cost_of_living": [
-        "Wise International Transfers",
-        "Cigna Global Health Insurance",
-    ],
+    "category_1_medicare_insurance": ["cigna", "img_global", "safetywing"],
+    "category_2_tax_fbar": ["greenback", "brighttax"],
+    "category_3_visa_residency": ["traveling_mailbox", "international_living"],
+    "category_4_banking_finance": ["wise", "charles_schwab"],
+    "category_5_real_estate": ["international_living"],
+    "category_6_social_security": ["wise", "charles_schwab"],
+    "category_7_healthcare_local": ["cigna", "img_global"],
+    "category_8_cost_of_living": ["wise", "international_living"],
 }
 
 
@@ -66,6 +44,45 @@ def load_revenue_insights():
 def load_trusted_domains():
     with open("trusted-domains.json", "r") as f:
         return json.load(f)
+
+
+def load_affiliate_links():
+    with open("affiliate-links.json", "r") as f:
+        return json.load(f)
+
+
+def effective_affiliate_url(entry):
+    """Return the tracking URL for active partners, fallback_url otherwise."""
+    if entry.get("status") == "active":
+        return entry["url"]
+    return entry.get("fallback_url", entry["url"])
+
+
+def resolve_affiliates(category, affiliate_links):
+    """Resolve a keyword category to a list of (name, url, status) tuples."""
+    keys = AFFILIATE_BY_CATEGORY.get(category, ["wise", "cigna"])
+    resolved = []
+    for key in keys:
+        entry = affiliate_links.get(key)
+        if not entry:
+            continue
+        resolved.append(
+            (entry["name"], effective_affiliate_url(entry), entry.get("status", "pending"))
+        )
+    return resolved
+
+
+def build_affiliate_directive(affiliates):
+    """Build an explicit 'use this EXACT URL' instruction block for the prompt."""
+    if not affiliates:
+        return "No affiliate partners are configured for this category."
+    lines = []
+    for name, url, status in affiliates:
+        lines.append(
+            f"  - When recommending {name}, link to it using this EXACT URL: {url}\n"
+            f"    Do NOT link to the partner's bare domain or invent a different URL."
+        )
+    return "\n".join(lines)
 
 
 def load_failure_db():
@@ -115,12 +132,11 @@ def get_category_failures(failure_db, category):
     ][:3]
 
 
-def build_system_prompt(revenue_insights, trusted_domains, failure_db, category, intent):
+def build_system_prompt(revenue_insights, trusted_domains, failure_db, category, intent, affiliate_directive):
     high_ctr = ", ".join(revenue_insights["high_ctr_topics"])
     conversion_patterns = "\n".join(
         f"  - {p}" for p in revenue_insights["high_conversion_patterns"]
     )
-    high_epc = ", ".join(revenue_insights["high_epc_affiliates"])
     low_performing = ", ".join(revenue_insights["low_performing_topics"])
     intent_guidance = revenue_insights["search_intent"].get(
         intent, "structured explanation with official sources"
@@ -164,7 +180,9 @@ REVENUE INTELLIGENCE (auto-injected from revenue-insights.json):
 Priority keywords to naturally weave in: {high_ctr}
 Title/heading patterns that convert well:
 {conversion_patterns}
-High-EPC affiliates to feature naturally: {high_epc}
+Affiliate partners to feature naturally — use the EXACT tracking URLs below
+(this is critical for commission tracking; never link to a partner's bare domain):
+{affiliate_directive}
 Topics to AVOID (low-performing): {low_performing}
 Search intent for this article: {intent} → {intent_guidance}
 
@@ -218,7 +236,8 @@ Article structure:
 5. Document checklist
 6. Portugal vs Mexico differences
 7. Recommended services ([PR] disclosure required)
-   Priority affiliates: {high_epc}
+   Use the EXACT affiliate URLs listed above — do not substitute bare domains:
+{affiliate_directive}
 
 Internal links to include naturally:
 {internal_link_list}
@@ -294,15 +313,20 @@ def keyword_to_filename(keyword):
     return f"{date_prefix}-{slug}.html"
 
 
-def generate_article(keyword, category, title, intent, revenue_insights, trusted_domains, failure_db):
-    affiliates = AFFILIATE_BY_CATEGORY.get(category, revenue_insights["high_epc_affiliates"][:2])
+def generate_article(keyword, category, title, intent, revenue_insights, trusted_domains, failure_db, affiliate_links):
+    affiliates = resolve_affiliates(category, affiliate_links)
+    affiliate_directive = build_affiliate_directive(affiliates)
     affiliate_note = (
-        f"For the Recommended Services section, feature these affiliates naturally with [PR] disclosure: "
-        f"{', '.join(affiliates)}. Place one affiliate mention inside the Step-by-step fix section "
-        f"and up to 3 in the Recommended Services section at the end."
+        f"For the Recommended Services section, feature these affiliates naturally with [PR] disclosure, "
+        f"linking each to its EXACT tracking URL:\n{affiliate_directive}\n"
+        f"Place one affiliate mention inside the Step-by-step fix section "
+        f"and up to 3 in the Recommended Services section at the end. "
+        f"Never link to a partner's bare domain (e.g. wise.com) — always use the exact URL above."
     )
 
-    system_prompt = build_system_prompt(revenue_insights, trusted_domains, failure_db, category, intent)
+    system_prompt = build_system_prompt(
+        revenue_insights, trusted_domains, failure_db, category, intent, affiliate_directive
+    )
 
     print(f"Generating article for: {keyword} (category: {category}, intent: {intent})")
     message = client.messages.create(
@@ -358,6 +382,7 @@ def main():
     revenue_insights = load_revenue_insights()
     trusted_domains = load_trusted_domains()
     failure_db = load_failure_db()
+    affiliate_links = load_affiliate_links()
 
     keywords_data = load_keywords()
     done_keywords = load_done_keywords()
@@ -381,7 +406,7 @@ def main():
         save_done_keywords(done_keywords)
         return
 
-    article_html = generate_article(keyword, category, title, intent, revenue_insights, trusted_domains, failure_db)
+    article_html = generate_article(keyword, category, title, intent, revenue_insights, trusted_domains, failure_db, affiliate_links)
     save_article(filename, article_html)
     update_sitemap(filename)
 
