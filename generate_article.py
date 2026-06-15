@@ -11,6 +11,27 @@ client = anthropic.Anthropic(api_key=os.environ["ANTHROPIC_API_KEY"])
 SITE_DOMAIN = "retireabroad-hub.com"
 SITE_NAME = "RetireAbroadHub"
 CONVERTKIT_FORM_ID = "9486067"
+GA4_MEASUREMENT_ID = "G-TLW2YBV2T6"
+
+GA4_SNIPPET = (
+    "<!-- Google tag (gtag.js) -->\n"
+    f'<script async src="https://www.googletagmanager.com/gtag/js?id={GA4_MEASUREMENT_ID}"></script>\n'
+    "<script>\n"
+    "  window.dataLayer = window.dataLayer || [];\n"
+    "  function gtag(){dataLayer.push(arguments);}\n"
+    "  gtag('js', new Date());\n"
+    f"  gtag('config', '{GA4_MEASUREMENT_ID}');\n"
+    "</script>\n"
+)
+
+
+def inject_ga4(html):
+    """Insert the GA4 snippet immediately before </head> (once)."""
+    if GA4_MEASUREMENT_ID in html:
+        return html
+    if "</head>" in html:
+        return html.replace("</head>", f"{GA4_SNIPPET}</head>", 1)
+    return html
 
 INTERNAL_LINKS = [
     "/guide-medicare.html",
@@ -353,6 +374,7 @@ def generate_article(keyword, category, title, intent, revenue_insights, trusted
 def save_article(filename, content):
     os.makedirs("articles", exist_ok=True)
     filepath = f"articles/{filename}"
+    content = inject_ga4(content)
     with open(filepath, "w", encoding="utf-8") as f:
         f.write(content)
     print(f"Saved: {filepath}")
